@@ -1,0 +1,154 @@
+set nocompatible                " vi compatible is LAME
+set ai                          " set auto-indenting on for programming
+set showmatch                   " automatically show matching brackets. works like it does in bbedit.
+set vb                          " turn on the "visual bell" - which is much quieter than the "audio blink"
+set ruler                       " show the cursor position all the time
+set laststatus=2                " make the last line where the status is two lines deep so you can see status always
+set backspace=indent,eol,start  " make that backspace key work the way it should
+set background=dark             " Use colours that work well on a dark background (Console is usually black)
+set showmode                    " show the current mode
+set clipboard=unnamed           " set clipboard to unnamed to access the system clipboard under windows
+syntax on                       " turn syntax highlighting on by default
+set t_Co=16
+"set number
+"set relativenumber
+set numberwidth=4
+set signcolumn=yes
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+let mapleader = ","
+let g:solarized_termcolors=256
+let g:sort_motion_flags = "ui"
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|dist\|bower_components'
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-airline/vim-airline'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'pangloss/vim-javascript'
+Plugin 'tpope/vim-fugitive'
+Plugin 'editorconfig/editorconfig-vim'	"use the editor config, luke
+Plugin 'mattn/emmet-vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'airblade/vim-gitgutter'	"see git changes in the gutter
+Plugin 'valloric/youcompleteme'
+Plugin 'klen/python-mode' 	"python coding awesomeness
+Plugin 'christoomey/vim-sort-motion'
+Plugin 'kchmck/vim-coffee-script' "because sometime I enjoy the pain
+Plugin 'suan/vim-instant-markdown' "previewing markdown
+Plugin 'easymotion/vim-easymotion'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'neilagabriel/vim-geeknote'
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+" set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+"set nowrap
+set wrap
+set textwidth=120
+set formatoptions=qrn1
+set colorcolumn=160
+set clipboard=unnamed
+nnoremap ; :
+"Key Remaps
+"Remove all trailing whitespace by pressing F5
+"http://vi.stackexchange.com/questions/454/whats-the-simplest-way-to-strip-trailing-whitespace-from-all-lines-in-a-file
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+highlight Cursor ctermfg=15 ctermbg=21 guifg=#ffffff guibg=#0000ff
+" Set Syntastic stuff
+" ------------------------------
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 5
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_javascript_checkers = ['eslint']
+
+let g:syntastic_error_symbol = '❌'
+let g:syntastic_style_error_symbol = '⁉️'
+let g:syntastic_warning_symbol = '⚠️'
+let g:syntastic_style_warning_symbol = '💩'
+let g:syntastic_html_tidy_ignore_errors = [
+        \'proprietary attribute "ng-',
+        \'<raf-item>',
+        \'<ng-*>',
+        \'proprietary attribute "c-',
+        \'proprietary attribute "fixed-'
+    \]
+highlight link SyntasticErrorSign SignColumn
+highlight link SyntasticWarningSign SignColumn
+highlight link SyntasticStyleErrorSign SignColumn
+highlight link SyntasticStyleWarningSign SignColumn
+
+" VIMDiff Settings
+map <silent> <leader>2 :diffget 2<CR> :diffupdate<CR> ",2 to get change from buffer number 2"
+map <silent> <leader>3 :diffget 3<CR> :diffupdate<CR>
+map <silent> <leader>4 :diffget 4<CR> :diffupdate<CR>
+" Solarized Theme
+" -----------------------------
+syntax enable
+set background=dark
+colorscheme solarized
+
+"Python-Mode Settings
+"--------------------
+let g:pymode_folding = 0
+
+" NERDTree Settings
+nmap <silent> <C-s> :NERDTreeToggle<CR>
+let NERDTreeMapOpenVSplit=',v'
+let NERDTreeDirArrows = 1
+let NERDTreeQuitOnOpen=1
+" Coffee Script Settings
+autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+
+" Markdown Preview Options
+let g:instant_markdown_slow = 1
+let g:instant_markdown_autostart = 1
+" Airline settings
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
+let g:airline#extensions#tabline#enabled = 1 " just show the file name
+
+"number toggle
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu | set rnu   | endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu | set nornu | endif
+augroup END
+
+let g:GeeknoteFormat="plain"
