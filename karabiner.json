@@ -19,6 +19,7 @@
                                       "type": "frontmost_application_unless",
                                       "bundle_identifiers": [
                                         "^org\\.vim\\.",
+                                        "^com.microsoft.VSCode",
                                         "^com.googlecode.iterm2"
                                       ]
                                     }
@@ -48,7 +49,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.googlecode.iterm2"
+                                            "^com.googlecode.iterm2",
+                                            "^com.microsoft.VSCode"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
