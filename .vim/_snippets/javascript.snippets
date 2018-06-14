@@ -2,6 +2,12 @@ snippet cl
 console.log($0);
 endsnippet
 
+snippet fn
+function $1 ($2) {
+ $0
+}
+endsnippet
+
 snippet ngcontroller
 (function() {
   'use strict'
@@ -74,11 +80,14 @@ snippet ngservice
 
   angular
     .module('${1:module}')
-    .service('${2:Service}', $2)
+    .factory('${2:Service}', $2)
 
   /* @ngInject */
   function $2 (${3:dependencies}) {
-    this.${4:func} = $4;
+  var service = {
+    ${4:func} = $4;
+  }
+  return service
 
     function $4 () {
     }

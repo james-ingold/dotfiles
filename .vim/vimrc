@@ -1,15 +1,21 @@
+set fileencodings=utf-8
+set encoding=utf-8
+scriptencoding utf-8
 set autoindent                   " set auto-indenting on for programming
 set showmatch                   " automatically show matching brackets. works like it does in bbedit.
 set visualbell                  " turn on the "visual bell" - which is much quieter than the "audio blink"
 set ruler                       " show the cursor position all the time
 set laststatus=2                " make the last line where the status is two lines deep so you can see status always
 set backspace=indent,eol,start  " make that backspace key work the way it should
-set background=dark             " Use colours that work well on a dark background (Console is usually black)
+"set background=dark             " Use colours that work well on a dark background (Console is usually black)
 set showmode                    " show the current mode
 set clipboard=unnamed           " set clipboard to unnamed to access the system clipboard under windows
 set hidden                      " No warnings about hidden buffers ie buffers with changes
 syntax on                       " turn syntax highlighting on by default
 set t_Co=16
+if &term ==# 'screen'
+  set t_Co=256
+endif
 set number
 set relativenumber
 set numberwidth=4
@@ -18,9 +24,24 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set infercase "infer case for autocompletion
+set timeoutlen=1000 ttimeoutlen=0
+set wildmenu
+set wildmode=full
+set completeopt-=preview
+"set nobackup
+"set nowritebackup
+let g:python_host_prog = '/usr/local/bin/python2'
+let g:python3_host_prog = '/Library/Frameworks/Python.framework/Versions/3.6/bin/python3'
 let g:mapleader = ','
 let g:solarized_termcolors=256
 let g:sort_motion_flags = 'ui'
+if has('nvim')
+    set inccommand=
+    set termguicolors
+    set guicursor=
+    let g:elite_mode=1
+endif
 "let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|dist\|bower_components'
 set runtimepath+=/usr/local/opt/fzf
 "Abbreviations
@@ -34,48 +55,60 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+"Plugin 'altercation/vim-colors-solarized'
+"Plugin 'ctrlpvim/ctrlp.vim'
+"Plugin 'vim-syntastic/syntastic'
+"Plugin 'scrooloose/nerdcommenter'
+Plugin 'mattn/emmet-vim'
+Plugin 'klen/python-mode'   "python coding awesomeness
 Plugin 'ervandew/supertab'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'trevordmiller/nova-vim'
 Plugin 'vim-airline/vim-airline'
-"Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'vim-airline/vim-airline-themes'
-"Plugin 'vim-syntastic/syntastic'
 Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdtree'
-Plugin 'pangloss/vim-javascript'
-Plugin 'tpope/vim-fugitive'
 Plugin 'editorconfig/editorconfig-vim'  "use the editor config, luke
-Plugin 'mattn/emmet-vim'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'airblade/vim-gitgutter' "see git changes in the gutter
 Plugin 'valloric/youcompleteme'
-Plugin 'klen/python-mode'   "python coding awesomeness
-Plugin 'christoomey/vim-sort-motion'
-Plugin 'kchmck/vim-coffee-script' "because sometime I enjoy the pain
+"Plugin 'christoomey/vim-sort-motion'
 Plugin 'suan/vim-instant-markdown' "previewing markdown
-Plugin 'easymotion/vim-easymotion'
+"Plugin 'easymotion/vim-easymotion'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'neilagabriel/vim-geeknote'
 Plugin 'mileszs/ack.vim'
-Plugin 'nikolas/ccl.vim'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'othree/html5.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'junegunn/fzf.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'prettier/vim-prettier'
-Plugin 'Quramy/tsuquyomi'
-Plugin 'sjl/gundo.vim'
+"Plugin 'sjl/gundo.vim'
 Plugin 'kana/vim-textobj-user'
-Plugin 'Julian/vim-textobj-brace'
+"Plugin 'Julian/vim-textobj-brace'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'mxw/vim-jsx'
+Plugin 'posva/vim-vue'
+Plugin 'vim-scripts/Vim-R-plugin'
+Plugin 'nelstrom/vim-visual-star-search'
+" Text Editing
+Plugin 'reedes/vim-pencil'
+Plugin 'reedes/vim-textobj-sentence'
+Plugin 'reedes/vim-textobj-quote'
+" Git
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter' "see git changes in the gutter
+" Javascript
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+"Typescript
+Plugin 'Quramy/tsuquyomi'
+Plugin 'leafgarland/typescript-vim'
+"Misc FileType Plugins
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'kchmck/vim-coffee-script' "because sometime I enjoy the pain
+Plugin 'othree/html5.vim'
 Plugin 'digitaltoad/vim-pug'
+Plugin 'ekalinin/Dockerfile.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
@@ -139,8 +172,9 @@ highlight Cursor ctermfg=15 ctermbg=21 guifg=#ffffff guibg=#0000ff
 let g:tsuquyomi_disable_quickfix = 1
 
 let g:ale_sign_column_always = 1
-let g:ale_sign_error = '❌ '
-let g:ale_sign_warning = '⚠️'
+"let g:ale_sign_error = '❌ '
+"let g:ale_sign_warning = '⚠️'
+" let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '✓']
 " Set this. Airline will handle the rest.
 let g:airline#extensions#ale#enabled = 1
 let g:ale_fixers = {
@@ -150,11 +184,24 @@ let g:ale_fixers = {
 let g:ale_fix_on_save = 1
 let g:ale_linters = {
   \ 'javascript': ['eslint'],
-  \ 'html': []
+  \ 'typescript': ['tslint'],
+  \ 'coffee': ['coffeelint'],
+  \ 'pug': ['pug-lint'],
+  \ 'vim': ['vint'],
+  \ 'html': [],
+  \ 'md': ['write-good', 'vale'],
+  \ 'text': ['write-good', 'vale']
   \ }
 let g:ale_javascript_eslint_suppress_missing_config = 1
-let g:ale_lint_on_text_changed = 'never' "trying to fix ale fucking up
-let g:ale_lint_on_enter = 0 "ditto
+let g:ale_lint_on_text_changed = 0 "trying to fix ale fucking up
+"let g:ale_lint_on_enter = 0 "ditto
+augroup ALECMD
+    autocmd!
+    autocmd InsertLeave * call ale#Lint()
+    autocmd TextChanged * call ale#Lint()
+augroup END
+nnoremap <silent> <leader>aj :ALENext<cr>
+nnoremap <silent> <leader>ak :ALEPrevious<cr>
 "Youcompleteme settings
 let g:ycm_filetype_blacklist = {
     \'typescript' : 1
@@ -168,7 +215,7 @@ let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
 let g:UltiSnipsSnippetsDir='~/.vim/_snippets'
 let g:UltiSnipsSnippetDirectories=['_snippets']
-let g:UltiSnipsUsePythonVersion = 2
+let g:UltiSnipsUsePythonVersion = 3
 " VIMDiff Settings
 map <silent> <leader>2 :diffget 2<CR> :diffupdate<CR> ",2 to get change from buffer number 2"
 map <silent> <leader>3 :diffget 3<CR> :diffupdate<CR>
@@ -183,6 +230,7 @@ nnoremap <silent> <leader>: :BLines<CR>
 nnoremap <silent> <C-r> :BTags<CR>
 nnoremap <silent> <leader>O :Tags<CR>
 let g:fzf_tags_command = 'ctags -R --exclude={node_modules,.git,bower_components,dist,docs,snippets,tests,utils,assets}'
+"set tags=./tags,tags;
 
 nnoremap <F5> :GundoToggle<CR>
 
@@ -243,9 +291,12 @@ if !isdirectory($HOME.'/.vim/files') && exists('*mkdir')
 endif
 " swap files
 set directory =$HOME/.vim/files/tmp
-set viminfo ='100,h,n$HOME/.vim/files/info/viminfo
+if !has('nvim')
+    set viminfo ='100,h,n$HOME/.vim/files/info/viminfo
+endif
 set updatecount =100
-set updatetime =4000
+"set updatetime =4000
+set updatetime=750
 set noswapfile
 
 " "Uppercase word" mapping.
@@ -324,3 +375,42 @@ augroup END
 
 " Spellcheck
 nnoremap <silent> <leader>s :set spell!<CR>
+
+autocmd filetype crontab setlocal nobackup nowritebackup
+
+"Easy Expansion of the Active File Directory
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
+"only jsx files get jsx syntax
+let g:jsx_ext_required = 1
+
+"Emmet Settings / Only use emmet on html css
+let g:user_emmet_install_global = 0
+augroup emmetcmd
+    autocmd!
+    autocmd! FileType html,css EmmetInstall
+augroup END
+
+augroup gitguttercmd
+    autocmd!
+    autocmd! BufWritePost * GitGutter
+augroup END
+
+"Mute highlighting until next search
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+"Fix the & command, always use && to includeflags on substitution
+nnoremap & :&&<CR>
+xnoremap & :&&<CR>
+
+"AutoPairs
+let g:AutoPairsShortcutJump='<leader>q'
+let g:AutoPairsShortcutFastWrap='<leader>w'
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd,text call pencil#init()
+                            \ | call textobj#quote#init()
+                            \ | call textobj#sentence#init()
+augroup END
+let g:pencil#textwidth = 80

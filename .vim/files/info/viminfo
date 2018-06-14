@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/caps
+~MSle0~/leader
 
 # Last Substitute Search Pattern:
 ~MSle0&dto.
@@ -21,211 +21,225 @@ $
 
 # Command Line History (newest to oldest):
 :qa
-|2,0,1521038256,,"qa"
+|2,0,1528910092,,"qa"
 :bd
-|2,0,1521031909,,"bd"
-:w
-|2,0,1520998170,,"w"
+|2,0,1528910069,,"bd"
 :wqa
-|2,0,1521031546,,"wqa"
+|2,0,1528808520,,"wqa"
+:w
+|2,0,1528808516,,"w"
+:diffget REMOTE
+|2,0,1528808495,,"diffget REMOTE"
+:k
+|2,0,1528300500,,"k"
+:diffget LOCAL
+|2,0,1528223304,,"diffget LOCAL"
+:diffget BASE
+|2,0,1528223297,,"diffget BASE"
+:ALEEnable
+|2,0,1527723679,,"ALEEnable"
+:ALELint
+|2,0,1527723673,,"ALELint"
+:ALEInfo
+|2,0,1527723664,,"ALEInfo"
+:ALEDetail
+|2,0,1527723649,,"ALEDetail"
+:ALEFixSuggest
+|2,0,1527723454,,"ALEFixSuggest"
+:;qa
+|2,0,1527723217,,";qa"
+:VundleInstall
+|2,0,1527723154,,"VundleInstall"
+:copen
+|2,0,1527703640,,"copen"
+:WritegoodEnable
+|2,0,1527703603,,"WritegoodEnable"
+:q
+|2,0,1526059854,,"q"
+:Geeknote
+|2,0,1526050532,,"Geeknote"
+:InstantMarkdownPreview
+|2,0,1525976328,,"InstantMarkdownPreview"
+:Ack! textobj
+|2,0,1525899728,,"Ack! textobj"
+:noh
+|2,0,1525899690,,"noh"
+:Ack! ,
+|2,0,1525893848,,"Ack! ,"
+:set nospell
+|2,0,1525893836,,"set nospell"
+:set spell off
+|2,0,1525893828,,"set spell off"
+:set !spell
+|2,0,1525893825,,"set !spell"
+:set spell
+|2,0,1525893821,,"set spell"
+:spell
+|2,0,1525893788,,"spell"
+:spellcheck
+|2,0,1525893785,,"spellcheck"
+:only
+|2,0,1525891972,,"only"
+:q!
+|2,0,1525891883,,"q!"
+:GeeknoteSync
+|2,0,1525891116,,"GeeknoteSync"
+:GeeknoteCreateNote
+|2,0,1525891109,,"GeeknoteCreateNote"
+:retab
+|2,0,1525878447,,"retab"
+:echo filetype
+|2,0,1525013297,,"echo filetype"
+:filetype?
+|2,0,1525013292,,"filetype?"
+:%
+|2,0,1524445403,,"%"
+:help tags
+|2,0,1524330988,,"help tags"
+:e
+|2,0,1523981919,,"e"
+:Vun
+|2,0,1523719937,,"Vun"
+:help :scriptencoding
+|2,0,1523717763,,"help :scriptencoding"
+:Vundle
+|2,0,1523487617,,"Vundle"
+:qa!
+|2,0,1523025415,,"qa!"
+:Gstatus
+|2,0,1523024838,,"Gstatus"
+:VundleInst
+|2,0,1522956048,,"VundleInst"
+:pc
+|2,0,1522678451,,"pc"
+:Prettier
+|2,0,1521648773,,"Prettier"
+:wq
+|2,0,1521471593,,"wq"
 :Ack! 3 seconds
 |2,0,1520998122,,"Ack! 3 seconds"
-:q
-|2,0,1520998115,,"q"
 :Ack! Request took longer
 |2,0,1520998107,,"Ack! Request took longer"
-:pc
-|2,0,1520870799,,"pc"
-:ALE
-|2,0,1520870593,,"ALE"
-:qs
-|2,0,1520953794,,"qs"
-:ALEFix
-|2,0,1520869482,,"ALEFix"
-:Ack! SSO_TOKEN_RECEIVED
-|2,0,1520867703,,"Ack! SSO_TOKEN_RECEIVED"
-:Ack! USER_AUTHENTICATED
-|2,0,1520867627,,"Ack! USER_AUTHENTICATED"
-:Ack! authenticated
-|2,0,1520867608,,"Ack! authenticated"
-:Ack! USER_AUTHENICATED
-|2,0,1520867603,,"Ack! USER_AUTHENICATED"
-:Ack! load-tenant
-|2,0,1520867559,,"Ack! load-tenant"
-:noh
-|2,0,1520606593,,"noh"
-:ALEDetail
-|2,0,1520605501,,"ALEDetail"
-:VundleInstall
-|2,0,1520537342,,"VundleInstall"
-:q!
-|2,0,1520537314,,"q!"
-:Ack! match_id
-|2,0,1520536917,,"Ack! match_id"
-:bd!
-|2,0,1520536701,,"bd!"
-:qa!
-|2,0,1520520087,,"qa!"
-:diffget REMOTE
-|2,0,1520437007,,"diffget REMOTE"
-:diffget LOCAL
-|2,0,1520436947,,"diffget LOCAL"
-:diff
-|2,0,1520349817,,"diff"
-:Ack! getting memcache things
-|2,0,1520271411,,"Ack! getting memcache things"
-:;w
-|2,0,1520007701,,";w"
-:kk
-|2,0,1519918674,,"kk"
-:Ack! encounterId
-|2,0,1519850324,,"Ack! encounterId"
-:.,.+1q
-|2,0,1519751513,,".,.+1q"
-:Ack! console.log
-|2,0,1519748600,,"Ack! console.log"
-:wqqa
-|2,0,1519746792,,"wqqa"
-:Ack! BetOnline
-|2,0,1519578927,,"Ack! BetOnline"
-:Ack! JsonOdds-API-Key
-|2,0,1519577520,,"Ack! JsonOdds-API-Key"
-:Ack! Tags
-|2,0,1519159792,,"Ack! Tags"
-:Ack! mailer
-|2,0,1519094668,,"Ack! mailer"
-:Ack! createMessage
-|2,0,1519094139,,"Ack! createMessage"
-:;;k
-|2,0,1519093763,,";;k"
-:wq!
-|2,0,1519080062,,"wq!"
-:Ack! MTN_Discover
-|2,0,1519077086,,"Ack! MTN_Discover"
-:Ack! tags
-|2,0,1519076758,,"Ack! tags"
-:Ack! AgreementId
-|2,0,1519076277,,"Ack! AgreementId"
-:Ack! .save
-|2,0,1519075565,,"Ack! .save"
-:Ack! user.
-|2,0,1519075510,,"Ack! user."
-:Ack! plan-options
-|2,0,1519073307,,"Ack! plan-options"
-:Ack! promo
-|2,0,1519073000,,"Ack! promo"
-:Ack! loggedIn
-|2,0,1519070614,,"Ack! loggedIn"
-:Ack! My profile
-|2,0,1519070562,,"Ack! My profile"
-:Ack! Sign out
-|2,0,1519070554,,"Ack! Sign out"
 
 # Search String History (newest to oldest):
-?/caps
-|2,1,1521038231,47,"caps"
-?/;
-|2,1,1521038213,47,";"
+?/leader
+|2,1,1528904222,47,"leader"
+?/cclose
+|2,1,1528904210,47,"cclose"
 ? \s\+$
-|2,1,1520998171,,"\\s\\+$"
-?/observati
-|2,1,1520998079,47,"observati"
-?/clea
-|2,1,1520953787,47,"clea"
-?/console.log
-|2,1,1520606680,47,"console.log"
-?/stack
-|2,1,1520606634,47,"stack"
-?/onopentag
-|2,1,1520606629,47,"onopentag"
-? }
-|2,1,1520606587,,"}"
-?/parser
-|2,1,1520606137,47,"parser"
-?/HTML
-|2,1,1520605840,47,"HTML"
-?/secrets
-|2,1,1520536748,47,"secrets"
-? \<apiGetResultsByMatchesapiGetResultsByMatches\>
-|2,1,1520535957,,"\\<apiGetResultsByMatchesapiGetResultsByMatches\\>"
-?/_
-|2,1,1520535078,47,"_"
-?/console
-|2,1,1520519950,47,"console"
-?/noh
-|2,1,1520350459,47,"noh"
-?/manipulateText
-|2,1,1520350450,47,"manipulateText"
-?/addTextToNotes
-|2,1,1520350440,47,"addTextToNotes"
-?/memcache
-|2,1,1520271431,47,"memcache"
-?/memc
-|2,1,1520271423,47,"memc"
+|2,1,1528727074,,"\\s\\+$"
+?/docker
+|2,1,1528313283,47,"docker"
+?/markdown
+|2,1,1528299754,47,"markdown"
+?/textwidth
+|2,1,1527865617,47,"textwidth"
+?/textwid
+|2,1,1527863283,47,"textwid"
+?/wrap
+|2,1,1527863072,47,"wrap"
+?/pencil
+|2,1,1527862944,47,"pencil"
+?/write-good
+|2,1,1527723603,47,"write-good"
+?/unimpair
+|2,1,1525899571,47,"unimpair"
+?/vimnot
+|2,1,1525890966,47,"vimnot"
+?/textobj
+|2,1,1525878492,47,"textobj"
+?/cmd
+|2,1,1525204244,47,"cmd"
+?/cmdn
+|2,1,1525204243,47,"cmdn"
+?/snips
+|2,1,1525017303,47,"snips"
+?/util
+|2,1,1525017299,47,"util"
+?/utilsnips
+|2,1,1525015081,47,"utilsnips"
+?/coffee
+|2,1,1524601522,47,"coffee"
 ?/ale
-|2,1,1519929068,47,"ale"
-?/log
-|2,1,1519922969,47,"log"
-?/well
-|2,1,1519833790,47,"well"
-?/Site
-|2,1,1519576815,47,"Site"
-?/BetOnline
-|2,1,1519576742,47,"BetOnline"
-?/logger
-|2,1,1519404160,47,"logger"
-?/jxt
-|2,1,1519053782,47,"jxt"
-?/height
-|2,1,1519167277,47,"height"
-?/edit
-|2,1,1519166038,47,"edit"
-?/profile-info
-|2,1,1519159472,47,"profile-info"
-?/db.user
-|2,1,1519137395,47,"db.user"
-?/pass
-|2,1,1519132819,47,"pass"
-?/mailer
-|2,1,1519094710,47,"mailer"
-?/applica
-|2,1,1519094593,47,"applica"
-?/update
-|2,1,1519090767,47,"update"
-?//
-|2,1,1519077452,47,"/"
+|2,1,1524505303,47,"ale"
+?/auto
+|2,1,1524491878,47,"auto"
+?/Geeknot
+|2,1,1524445500,47,"Geeknot"
+?/ALE
+|2,1,1524407862,47,"ALE"
+?/ignore
+|2,1,1524352616,47,"ignore"
 ?/tag
-|2,1,1519076755,47,"tag"
+|2,1,1524331707,47,"tag"
 ?/tags
-|2,1,1519076751,47,"tags"
-?/active
-|2,1,1519076394,47,"active"
-?/billing
-|2,1,1519076321,47,"billing"
-?/Agreement
-|2,1,1519076266,47,"Agreement"
-?/StripeI
-|2,1,1519075730,47,"StripeI"
-?/save
-|2,1,1519075539,47,"save"
-?/promo
-|2,1,1519073261,47,"promo"
-?/lo
-|2,1,1519070613,47,"lo"
-?/session
-|2,1,1519067056,47,"session"
-?/Agree
-|2,1,1519063877,47,"Agree"
-?/email add
-|2,1,1519058877,47,"email add"
-?/error
-|2,1,1519057249,47,"error"
-?/PlanTer
-|2,1,1519057183,47,"PlanTer"
+|2,1,1524330797,47,"tags"
+?/set
+|2,1,1524250970,47,"set"
+?/set e
+|2,1,1524250960,47,"set e"
+?/updatetime
+|2,1,1523981989,47,"updatetime"
+?/highlight
+|2,1,1523981798,47,"highlight"
+?/autopa
+|2,1,1523903392,47,"autopa"
+?/gitgutter
+|2,1,1523903187,47,"gitgutter"
+?/airline
+|2,1,1523900121,47,"airline"
+?/emmet
+|2,1,1523890880,47,"emmet"
+?/html
+|2,1,1523890870,47,"html"
+?/pretti
+|2,1,1523801841,47,"pretti"
+?/backup
+|2,1,1523718027,47,"backup"
+?/fileencod
+|2,1,1523717794,47,"fileencod"
+?/nvim
+|2,1,1523679446,47,"nvim"
+?/ycm
+|2,1,1523666615,47,"ycm"
+?/t
+|2,1,1523657774,47,"t"
+?/pug
+|2,1,1523499549,47,"pug"
+?/jsx
+|2,1,1523481374,47,"jsx"
+?/SHELL
+|2,1,1523454502,47,"SHELL"
+?/shell
+|2,1,1523454314,47,"shell"
+?/xterm
+|2,1,1523379834,47,"xterm"
+?/bprevious
+|2,1,1523314675,47,"bprevious"
+?/CurrentConditions
+|2,1,1523023568,47,"CurrentConditions"
+?/removeCondition
+|2,1,1522936208,47,"removeCondition"
+?/duplica
+|2,1,1522863458,47,"duplica"
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@/Users/jamesingold/Repos/synthesize/api/build.sh
+|2,3,1521471178,,"/Users/jamesingold/Repos/synthesize/api/build.sh"
+@/Users/jamesingold/Repos/synthesize/lib/models/repetition.ts
+|2,3,1521471082,,"/Users/jamesingold/Repos/synthesize/lib/models/repetition.ts"
+@/Users/jamesingold/Repos/synthesize/lib/models/deck.ts
+|2,3,1521471071,,"/Users/jamesingold/Repos/synthesize/lib/models/deck.ts"
+@/Users/jamesingold/Repos/synthesize/lib/models/card.ts
+|2,3,1521471062,,"/Users/jamesingold/Repos/synthesize/lib/models/card.ts"
+@/Users/jamesingold/Repos/synthesize/lib/models/all.ts
+|2,3,1521471053,,"/Users/jamesingold/Repos/synthesize/lib/models/all.ts"
+@/Users/jamesingold/Repos/synthesize/lib/models/
+|2,3,1521471041,,"/Users/jamesingold/Repos/synthesize/lib/models/"
+@/Users/jamesingold/Repos/synthesize/lib/node_modules/
+|2,3,1521471037,,"/Users/jamesingold/Repos/synthesize/lib/node_modules/"
 @/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/.serverless-secrets.json
 |2,3,1520536340,,"/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/.serverless-secrets.json"
 @/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/src/functions/cloudwatch.ts
@@ -312,55 +326,46 @@ $
 |2,3,1517844328,,"/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/shared/middlewares/secrets.ts"
 @/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/shared/middlewares/
 |2,3,1517844320,,"/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/shared/middlewares/"
-@/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/shared/secretsMiddle
-|2,3,1517844315,,"/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/shared/secretsMiddle"
-@y
-|2,3,1517582772,,"y"
-@/Users/jamesingold/Repos/juxly/jx-smart-sso/whitelist.json
-|2,3,1517607240,,"/Users/jamesingold/Repos/juxly/jx-smart-sso/whitelist.json"
-@/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/src/db.service.ts
-|2,3,1517264266,,"/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/src/db.service.ts"
-@/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/src/sources/sources.service.ts
-|2,3,1517004016,,"/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/src/sources/sources.service.ts"
-@/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/src/regions/regions.service.ts
-|2,3,1517003392,,"/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/src/regions/regions.service.ts"
-@/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/shared/logger.ts
-|2,3,1517002142,,"/Users/jamesingold/Documents/Repositories/getodds/GetOdds/Serverless/shared/logger.ts"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	user.tenantId
+""0	CHAR	0
+	alias ..='cd ..'
+	alias ...='cd ../..'
+	alias ....='cd ../../..'
+	alias .....='cd ../../../..'
+	alias ......='cd ../../../../..'
 	
-|3,0,0,0,2,0,1520979580,"user.tenantId",""
-""1	LINE	0
-	  console.log(text)
-|3,1,1,1,1,0,1520998164,"  console.log(text)"
+|3,1,0,0,6,0,1528910084,"alias ..='cd ..'","alias ...='cd ../..'","alias ....='cd ../../..'","alias .....='cd ../../../..'","alias ......='cd ../../../../..'",""
+"1	LINE	0
+	
+|3,0,1,1,1,0,1528808515,""
 "2	LINE	0
-	  if (m.elapsed > 3) logger.log(new Error('Request took longer then 3 seconds: ' + text))
-|3,0,2,1,1,0,1520998163,"  if (m.elapsed > 3) logger.log(new Error('Request took longer then 3 seconds: ' + text))"
+	* [Endgame: An Ideal Productive Day](Ideal.md)
+	* [Endgame: Deadline Over Detail](DeadlineOverDetail.md)
+|3,0,2,1,2,0,1528808471,"* [Endgame: An Ideal Productive Day](Ideal.md)","* [Endgame: Deadline Over Detail](DeadlineOverDetail.md)"
 "3	LINE	0
-	        log(new Error('Logging launch.html from ' + window.location.href))
-|3,0,3,1,1,0,1520998047,"        log(new Error('Logging launch.html from ' + window.location.href))"
+	RUN cd mock-smart-on-fhir-api
+|3,0,3,1,1,0,1528305069,"RUN cd mock-smart-on-fhir-api"
 "4	LINE	0
-	user.jxTenantId
-|3,0,4,1,1,0,1520979615,"user.jxTenantId"
+	                            \ | set textwidth=120
+|3,0,4,1,1,0,1527865624,"                            \\ | set textwidth=120"
 "5	LINE	0
-		export EDITOR='vim'
-|3,0,5,1,1,0,1520954341,"	export EDITOR='vim'"
+	  autocmd FileType markdown,mkd         call pencil#init()
+|3,0,5,1,1,0,1527863134,"  autocmd FileType markdown,mkd         call pencil#init()"
 "6	LINE	0
-		export JxPassword="Y2JYOx33#2x6"
-|3,0,6,1,1,0,1520954329,"	export JxPassword=\"Y2JYOx33#2x6\""
+	  autocmd FileType text         call pencil#init({'wrap': 'hard'})
+|3,0,6,1,1,0,1527863134,"  autocmd FileType text         call pencil#init({'wrap': 'hard'})"
 "7	LINE	0
-		export JxUsername="support@juxly.com"
-|3,0,7,1,1,0,1520954328,"	export JxUsername=\"support@juxly.com\""
+	Foundation: Sleep is Not Overrated
+|3,0,7,1,1,0,1527788937,"Foundation: Sleep is Not Overrated"
 "8	LINE	0
-	export STS_C
-|3,0,8,1,1,0,1520953428,"export STS_C"
+	
+|3,0,8,1,1,0,1527788931,""
 "9	LINE	0
-	export STS_CACHE_USER='memcached-app67316379'
-|3,0,9,1,1,0,1520953427,"export STS_CACHE_USER='memcached-app67316379'"
+	Foundation: Sleep is Not Overrated
+|3,0,9,1,1,0,1527788931,"Foundation: Sleep is Not Overrated"
 "a	CHAR	0
 	(
 |3,0,10,0,1,0,1519059572,"("
@@ -590,1291 +595,1194 @@ $
 	vt,'cs'li37jjjjhhvt'
 |3,0,26,0,1,0,1518930716,"vt,'cs'li37jjjjhhvt'"
 "w	CHAR	0
-	wwwwwwwvjjjkkkkjVhjklv$yi	kw€kbey€kby: '36'€kb€kb€kb€kb36,value: '€PS3' 0"[201~€kbw
-|3,0,32,0,1,0,1518929036,"wwwwwwwvjjjkkkkjVhjklv$yi	kw€kbey€kby: '36'€kb€kb€kb€kb36,value: '€PS3' 0\"[201~€kbw"
+	wwwwwwwwijkkkkkkkli€kblij:ggg=Ggg=GjjjjjjjjjjkkkkkkwwwijlgggqGujjjjjkjkjjjjjjjjjjjjj:Prewt€kb€kbttier
+|3,0,32,0,1,0,1521648771,"wwwwwwwwijkkkkkkkli€kblij:ggg=Ggg=GjjjjjjjjjjkkkkkkwwwijlgggqGujjjjjkjkjjjjjjjjjjjjj:Prewt€kb€kbttier"
 "-	CHAR	0
-	 | flush_all
-|3,0,36,0,1,0,1520953740," | flush_all"
+	force
+|3,0,36,0,1,0,1528727072,"force"
 
 # File marks:
-'0  268  0  ~/Documents/Repositories/dotfiles/.vim/vimrc
-|4,48,268,0,1521038256,"~/Documents/Repositories/dotfiles/.vim/vimrc"
-'1  690  32  ~/Documents/Repositories/dotfiles/karabiner.json
-|4,49,690,32,1521037301,"~/Documents/Repositories/dotfiles/karabiner.json"
-'2  56  0  ~/Repos/juxly-raf/routes/index.js
-|4,50,56,0,1521035681,"~/Repos/juxly-raf/routes/index.js"
-'3  1  0  ~/Repos/juxly-raf/.git/MERGE_MSG
-|4,51,1,0,1521031546,"~/Repos/juxly-raf/.git/MERGE_MSG"
-'4  17  0  /Repos/jxtimeline/public/app/core/exception.js
-|4,52,17,0,1521031295,"/Repos/jxtimeline/public/app/core/exception.js"
-'5  1  0  ~/Repos/juxly-raf/.git/MERGE_MSG
-|4,53,1,0,1521031270,"~/Repos/juxly-raf/.git/MERGE_MSG"
-'6  1  0  ~/Repos/juxly-raf/.git/MERGE_MSG
-|4,54,1,0,1520997959,"~/Repos/juxly-raf/.git/MERGE_MSG"
-'7  1  0  ~/Repos/juxly-raf/.git/MERGE_MSG
-|4,55,1,0,1520997959,"~/Repos/juxly-raf/.git/MERGE_MSG"
-'8  32  6  ~/Repos/juxly-raf/utils/http.js
-|4,56,32,6,1520997946,"~/Repos/juxly-raf/utils/http.js"
-'9  32  6  ~/Repos/juxly-raf/utils/http.js
-|4,57,32,6,1520997946,"~/Repos/juxly-raf/utils/http.js"
+'0  11  0  ~/.oh-my-zsh/custom/alias.zsh
+|4,48,11,0,1528910092,"~/.oh-my-zsh/custom/alias.zsh"
+'1  31  0  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,49,31,0,1528808520,"~/Repos/deadlineoverdetail/SUMMARY.md"
+'2  2  63  ~/Documents/Repositories/dotfiles/.vim/after/ftplugin/html.vim
+|4,50,2,63,1528727075,"~/Documents/Repositories/dotfiles/.vim/after/ftplugin/html.vim"
+'3  2  64  ~/Documents/Repositories/dotfiles/.vim/after/ftplugin/html.vim
+|4,51,2,64,1528727027,"~/Documents/Repositories/dotfiles/.vim/after/ftplugin/html.vim"
+'4  2  82  ~/Documents/Repositories/dotfiles/.vim/after/ftplugin/html.vim
+|4,52,2,82,1528726912,"~/Documents/Repositories/dotfiles/.vim/after/ftplugin/html.vim"
+'5  2  82  ~/Documents/Repositories/dotfiles/.vim/after/ftplugin/html.vim
+|4,53,2,82,1528726912,"~/Documents/Repositories/dotfiles/.vim/after/ftplugin/html.vim"
+'6  1  1  ~/NERD_tree_1
+|4,54,1,1,1528726819,"~/NERD_tree_1"
+'7  2  1  ~/NERD_tree_1
+|4,55,2,1,1528726819,"~/NERD_tree_1"
+'8  2  1  ~/NERD_tree_1
+|4,56,2,1,1528726819,"~/NERD_tree_1"
+'9  3  1  ~/NERD_tree_1
+|4,57,3,1,1528726819,"~/NERD_tree_1"
 
 # Jumplist (newest first):
--'  268  0  ~/Documents/Repositories/dotfiles/.vim/vimrc
-|4,39,268,0,1521038256,"~/Documents/Repositories/dotfiles/.vim/vimrc"
--'  282  0  ~/Documents/Repositories/dotfiles/.vim/vimrc
-|4,39,282,0,1521038248,"~/Documents/Repositories/dotfiles/.vim/vimrc"
--'  271  0  ~/Documents/Repositories/dotfiles/.vim/vimrc
-|4,39,271,0,1521038236,"~/Documents/Repositories/dotfiles/.vim/vimrc"
--'  228  0  ~/Documents/Repositories/dotfiles/.vim/vimrc
-|4,39,228,0,1521038231,"~/Documents/Repositories/dotfiles/.vim/vimrc"
--'  288  0  ~/Documents/Repositories/dotfiles/.vim/vimrc
-|4,39,288,0,1521038213,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  11  0  ~/.oh-my-zsh/custom/alias.zsh
+|4,39,11,0,1528910092,"~/.oh-my-zsh/custom/alias.zsh"
+-'  1  0  ~/.oh-my-zsh/custom/alias.zsh
+|4,39,1,0,1528910080,"~/.oh-my-zsh/custom/alias.zsh"
+-'  4  1  ~/.oh-my-zsh/custom/james.zsh
+|4,39,4,1,1528910069,"~/.oh-my-zsh/custom/james.zsh"
+-'  4  1  ~/.oh-my-zsh/custom/james.zsh
+|4,39,4,1,1528910069,"~/.oh-my-zsh/custom/james.zsh"
+-'  1  0  ~/.oh-my-zsh/custom/james.zsh
+|4,39,1,0,1528910063,"~/.oh-my-zsh/custom/james.zsh"
+-'  1  0  ~/.oh-my-zsh/custom/james.zsh
+|4,39,1,0,1528910063,"~/.oh-my-zsh/custom/james.zsh"
+-'  220  14  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,220,14,1528904242,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  220  14  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,220,14,1528904242,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  220  14  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,220,14,1528904242,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  220  14  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,220,14,1528904242,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  204  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,204,19,1528904239,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  203  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,203,19,1528904239,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  204  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,204,19,1528904239,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  203  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,203,19,1528904239,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  204  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,204,19,1528904239,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  203  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,203,19,1528904239,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  204  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,204,19,1528904239,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  203  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,203,19,1528904239,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  36  9  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,36,9,1528904238,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  36  9  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,36,9,1528904238,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  36  9  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,36,9,1528904238,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  36  9  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,36,9,1528904238,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  408  34  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,408,34,1528904236,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  407  30  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,407,30,1528904236,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  408  34  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,408,34,1528904236,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  407  30  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,407,30,1528904236,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  408  34  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,408,34,1528904236,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  407  30  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,407,30,1528904236,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  408  34  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,408,34,1528904236,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  407  30  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,407,30,1528904236,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  377  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,377,19,1528904234,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  377  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,377,19,1528904234,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  377  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,377,19,1528904234,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  377  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,377,19,1528904234,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  337  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,337,10,1528904233,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  337  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,337,10,1528904233,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  337  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,337,10,1528904233,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  337  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,337,10,1528904233,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  336  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,336,10,1528904232,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  335  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,335,10,1528904232,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  336  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,336,10,1528904232,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  335  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,335,10,1528904232,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  336  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,336,10,1528904232,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  335  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,335,10,1528904232,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  336  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,336,10,1528904232,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  335  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,335,10,1528904232,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  284  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,284,10,1528904231,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  284  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,284,10,1528904231,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  284  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,284,10,1528904231,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  284  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,284,10,1528904231,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  274  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,274,10,1528904230,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  274  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,274,10,1528904230,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  274  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,274,10,1528904230,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  274  10  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,274,10,1528904230,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  231  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,231,19,1528904227,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  229  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,229,19,1528904227,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  231  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,231,19,1528904227,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  229  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,229,19,1528904227,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  231  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,231,19,1528904227,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  229  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,229,19,1528904227,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  231  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,231,19,1528904227,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  229  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,229,19,1528904227,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  228  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,228,19,1528904226,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  227  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,227,19,1528904226,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  228  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,228,19,1528904226,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  227  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,227,19,1528904226,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  228  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,228,19,1528904226,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  227  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,227,19,1528904226,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  228  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,228,19,1528904226,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  227  19  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,227,19,1528904226,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  222  14  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,222,14,1528904225,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  222  14  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,222,14,1528904225,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  222  14  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,222,14,1528904225,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  222  14  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,222,14,1528904225,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  221  14  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,221,14,1528904224,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  221  14  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,221,14,1528904224,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  221  14  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,221,14,1528904224,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  221  14  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,221,14,1528904224,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  40  4  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,40,4,1528904222,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  40  4  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,40,4,1528904222,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  40  4  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,40,4,1528904222,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  40  4  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,40,4,1528904222,"~/Documents/Repositories/dotfiles/.vim/vimrc"
 -'  1  0  ~/Documents/Repositories/dotfiles/.vim/vimrc
-|4,39,1,0,1521038199,"~/Documents/Repositories/dotfiles/.vim/vimrc"
--'  690  32  ~/Documents/Repositories/dotfiles/karabiner.json
-|4,39,690,32,1521037301,"~/Documents/Repositories/dotfiles/karabiner.json"
--'  690  32  ~/Documents/Repositories/dotfiles/karabiner.json
-|4,39,690,32,1521037301,"~/Documents/Repositories/dotfiles/karabiner.json"
--'  1  0  ~/Documents/Repositories/dotfiles/karabiner.json
-|4,39,1,0,1521037270,"~/Documents/Repositories/dotfiles/karabiner.json"
--'  1  0  ~/Documents/Repositories/dotfiles/karabiner.json
-|4,39,1,0,1521037270,"~/Documents/Repositories/dotfiles/karabiner.json"
--'  56  0  ~/Repos/juxly-raf/routes/index.js
-|4,39,56,0,1521035681,"~/Repos/juxly-raf/routes/index.js"
--'  56  0  ~/Repos/juxly-raf/routes/index.js
-|4,39,56,0,1521035681,"~/Repos/juxly-raf/routes/index.js"
--'  56  0  ~/Repos/juxly-raf/routes/index.js
-|4,39,56,0,1521035681,"~/Repos/juxly-raf/routes/index.js"
--'  56  0  ~/Repos/juxly-raf/routes/index.js
-|4,39,56,0,1521035681,"~/Repos/juxly-raf/routes/index.js"
--'  33  6  ~/Repos/juxly-raf/views/launch.jade
-|4,39,33,6,1521031909,"~/Repos/juxly-raf/views/launch.jade"
--'  33  6  ~/Repos/juxly-raf/views/launch.jade
-|4,39,33,6,1521031909,"~/Repos/juxly-raf/views/launch.jade"
--'  33  6  ~/Repos/juxly-raf/views/launch.jade
-|4,39,33,6,1521031909,"~/Repos/juxly-raf/views/launch.jade"
--'  33  6  ~/Repos/juxly-raf/views/launch.jade
-|4,39,33,6,1521031909,"~/Repos/juxly-raf/views/launch.jade"
--'  49  0  ~/Repos/juxly-raf/routes/index.js
-|4,39,49,0,1521031903,"~/Repos/juxly-raf/routes/index.js"
--'  49  0  ~/Repos/juxly-raf/routes/index.js
-|4,39,49,0,1521031903,"~/Repos/juxly-raf/routes/index.js"
--'  49  0  ~/Repos/juxly-raf/routes/index.js
-|4,39,49,0,1521031903,"~/Repos/juxly-raf/routes/index.js"
--'  49  0  ~/Repos/juxly-raf/routes/index.js
-|4,39,49,0,1521031903,"~/Repos/juxly-raf/routes/index.js"
--'  1  0  ~/Repos/juxly-raf/.git/MERGE_MSG
-|4,39,1,0,1521031546,"~/Repos/juxly-raf/.git/MERGE_MSG"
--'  1  0  ~/Repos/juxly-raf/.git/MERGE_MSG
-|4,39,1,0,1521031546,"~/Repos/juxly-raf/.git/MERGE_MSG"
--'  1  0  ~/Repos/juxly-raf/.git/MERGE_MSG
-|4,39,1,0,1521031546,"~/Repos/juxly-raf/.git/MERGE_MSG"
--'  1  0  ~/Repos/juxly-raf/.git/MERGE_MSG
-|4,39,1,0,1521031546,"~/Repos/juxly-raf/.git/MERGE_MSG"
--'  17  0  /Repos/jxtimeline/public/app/core/exception.js
-|4,39,17,0,1521031295,"/Repos/jxtimeline/public/app/core/exception.js"
--'  17  0  /Repos/jxtimeline/public/app/core/exception.js
-|4,39,17,0,1521031295,"/Repos/jxtimeline/public/app/core/exception.js"
--'  17  0  /Repos/jxtimeline/public/app/core/exception.js
-|4,39,17,0,1521031295,"/Repos/jxtimeline/public/app/core/exception.js"
--'  17  0  /Repos/jxtimeline/public/app/core/exception.js
-|4,39,17,0,1521031295,"/Repos/jxtimeline/public/app/core/exception.js"
--'  17  0  /Repos/jxtimeline/public/app/core/exception.js
-|4,39,17,0,1521031295,"/Repos/jxtimeline/public/app/core/exception.js"
--'  17  0  /Repos/jxtimeline/public/app/core/exception.js
-|4,39,17,0,1521031295,"/Repos/jxtimeline/public/app/core/exception.js"
--'  17  0  /Repos/jxtimeline/public/app/core/exception.js
-|4,39,17,0,1521031295,"/Repos/jxtimeline/public/app/core/exception.js"
--'  17  0  /Repos/jxtimeline/public/app/core/exception.js
-|4,39,17,0,1521031295,"/Repos/jxtimeline/public/app/core/exception.js"
--'  1  0  ~/Repos/juxly-raf/.git/MERGE_MSG
-|4,39,1,0,1521031270,"~/Repos/juxly-raf/.git/MERGE_MSG"
--'  1  0  ~/Repos/juxly-raf/.git/MERGE_MSG
-|4,39,1,0,1521031270,"~/Repos/juxly-raf/.git/MERGE_MSG"
--'  1  0  ~/Repos/juxly-raf/.git/MERGE_MSG
-|4,39,1,0,1521031270,"~/Repos/juxly-raf/.git/MERGE_MSG"
--'  1  0  ~/Repos/juxly-raf/.git/MERGE_MSG
-|4,39,1,0,1521031270,"~/Repos/juxly-raf/.git/MERGE_MSG"
--'  15  4  ~/Repos/juxly-raf/views/launch.jade
-|4,39,15,4,1521031164,"~/Repos/juxly-raf/views/launch.jade"
--'  15  4  ~/Repos/juxly-raf/views/launch.jade
-|4,39,15,4,1521031164,"~/Repos/juxly-raf/views/launch.jade"
--'  15  4  ~/Repos/juxly-raf/views/launch.jade
-|4,39,15,4,1521031164,"~/Repos/juxly-raf/views/launch.jade"
--'  15  4  ~/Repos/juxly-raf/views/launch.jade
-|4,39,15,4,1521031164,"~/Repos/juxly-raf/views/launch.jade"
--'  27  0  ~/Repos/juxly-raf/public/app/blocks/exception/exception-handler.provider.js
-|4,39,27,0,1521031136,"~/Repos/juxly-raf/public/app/blocks/exception/exception-handler.provider.js"
--'  27  0  ~/Repos/juxly-raf/public/app/blocks/exception/exception-handler.provider.js
-|4,39,27,0,1521031136,"~/Repos/juxly-raf/public/app/blocks/exception/exception-handler.provider.js"
--'  27  0  ~/Repos/juxly-raf/public/app/blocks/exception/exception-handler.provider.js
-|4,39,27,0,1521031136,"~/Repos/juxly-raf/public/app/blocks/exception/exception-handler.provider.js"
--'  27  0  ~/Repos/juxly-raf/public/app/blocks/exception/exception-handler.provider.js
-|4,39,27,0,1521031136,"~/Repos/juxly-raf/public/app/blocks/exception/exception-handler.provider.js"
--'  17  0  ~/Repos/juxly-raf/public/app/blocks/exception/exception.service.js
-|4,39,17,0,1521031119,"~/Repos/juxly-raf/public/app/blocks/exception/exception.service.js"
--'  17  0  ~/Repos/juxly-raf/public/app/blocks/exception/exception.service.js
-|4,39,17,0,1521031119,"~/Repos/juxly-raf/public/app/blocks/exception/exception.service.js"
--'  17  0  ~/Repos/juxly-raf/public/app/blocks/exception/exception.service.js
-|4,39,17,0,1521031119,"~/Repos/juxly-raf/public/app/blocks/exception/exception.service.js"
--'  17  0  ~/Repos/juxly-raf/public/app/blocks/exception/exception.service.js
-|4,39,17,0,1521031119,"~/Repos/juxly-raf/public/app/blocks/exception/exception.service.js"
--'  32  0  /Repos/jxtimeline/views/launch.jade
-|4,39,32,0,1521031106,"/Repos/jxtimeline/views/launch.jade"
--'  32  0  /Repos/jxtimeline/views/launch.jade
-|4,39,32,0,1521031106,"/Repos/jxtimeline/views/launch.jade"
--'  32  0  /Repos/jxtimeline/views/launch.jade
-|4,39,32,0,1521031106,"/Repos/jxtimeline/views/launch.jade"
--'  32  0  /Repos/jxtimeline/views/launch.jade
-|4,39,32,0,1521031106,"/Repos/jxtimeline/views/launch.jade"
--'  32  0  /Repos/jxtimeline/views/launch.jade
-|4,39,32,0,1521031106,"/Repos/jxtimeline/views/launch.jade"
--'  32  0  /Repos/jxtimeline/views/launch.jade
-|4,39,32,0,1521031106,"/Repos/jxtimeline/views/launch.jade"
--'  32  0  /Repos/jxtimeline/views/launch.jade
-|4,39,32,0,1521031106,"/Repos/jxtimeline/views/launch.jade"
--'  32  0  /Repos/jxtimeline/views/launch.jade
-|4,39,32,0,1521031106,"/Repos/jxtimeline/views/launch.jade"
--'  24  0  ~/Repos/juxly-raf/public/app/blocks/logger/logger.js
-|4,39,24,0,1521031088,"~/Repos/juxly-raf/public/app/blocks/logger/logger.js"
--'  24  0  ~/Repos/juxly-raf/public/app/blocks/logger/logger.js
-|4,39,24,0,1521031088,"~/Repos/juxly-raf/public/app/blocks/logger/logger.js"
--'  24  0  ~/Repos/juxly-raf/public/app/blocks/logger/logger.js
-|4,39,24,0,1521031088,"~/Repos/juxly-raf/public/app/blocks/logger/logger.js"
--'  24  0  ~/Repos/juxly-raf/public/app/blocks/logger/logger.js
-|4,39,24,0,1521031088,"~/Repos/juxly-raf/public/app/blocks/logger/logger.js"
--'  211  0  ~/Repos/juxly-raf/services/fhir.js
-|4,39,211,0,1521031076,"~/Repos/juxly-raf/services/fhir.js"
--'  211  0  ~/Repos/juxly-raf/services/fhir.js
-|4,39,211,0,1521031076,"~/Repos/juxly-raf/services/fhir.js"
--'  211  0  ~/Repos/juxly-raf/services/fhir.js
-|4,39,211,0,1521031076,"~/Repos/juxly-raf/services/fhir.js"
--'  211  0  ~/Repos/juxly-raf/services/fhir.js
-|4,39,211,0,1521031076,"~/Repos/juxly-raf/services/fhir.js"
--'  1  0  ~/Repos/juxly-raf/services/fhir.js
-|4,39,1,0,1520998171,"~/Repos/juxly-raf/services/fhir.js"
--'  1  0  ~/Repos/juxly-raf/services/fhir.js
-|4,39,1,0,1520998171,"~/Repos/juxly-raf/services/fhir.js"
--'  1  0  ~/Repos/juxly-raf/services/fhir.js
-|4,39,1,0,1520998171,"~/Repos/juxly-raf/services/fhir.js"
--'  1  0  ~/Repos/juxly-raf/services/fhir.js
-|4,39,1,0,1520998171,"~/Repos/juxly-raf/services/fhir.js"
--'  139  3  ~/Repos/juxly-raf/services/fhir.js
-|4,39,139,3,1520998170,"~/Repos/juxly-raf/services/fhir.js"
--'  139  3  ~/Repos/juxly-raf/services/fhir.js
-|4,39,139,3,1520998170,"~/Repos/juxly-raf/services/fhir.js"
--'  139  3  ~/Repos/juxly-raf/services/fhir.js
-|4,39,139,3,1520998170,"~/Repos/juxly-raf/services/fhir.js"
--'  139  3  ~/Repos/juxly-raf/services/fhir.js
-|4,39,139,3,1520998170,"~/Repos/juxly-raf/services/fhir.js"
--'  140  2  ~/Repos/juxly-raf/services/fhir.js
-|4,39,140,2,1520998165,"~/Repos/juxly-raf/services/fhir.js"
--'  140  2  ~/Repos/juxly-raf/services/fhir.js
-|4,39,140,2,1520998165,"~/Repos/juxly-raf/services/fhir.js"
--'  140  2  ~/Repos/juxly-raf/services/fhir.js
-|4,39,140,2,1520998165,"~/Repos/juxly-raf/services/fhir.js"
--'  140  2  ~/Repos/juxly-raf/services/fhir.js
-|4,39,140,2,1520998165,"~/Repos/juxly-raf/services/fhir.js"
--'  16  0  ~/Repos/juxly-raf/NERD_tree_1
-|4,39,16,0,1520998137,"~/Repos/juxly-raf/NERD_tree_1"
--'  16  0  ~/Repos/juxly-raf/NERD_tree_1
-|4,39,16,0,1520998137,"~/Repos/juxly-raf/NERD_tree_1"
--'  16  0  ~/Repos/juxly-raf/NERD_tree_1
-|4,39,16,0,1520998137,"~/Repos/juxly-raf/NERD_tree_1"
--'  16  0  ~/Repos/juxly-raf/NERD_tree_1
-|4,39,16,0,1520998137,"~/Repos/juxly-raf/NERD_tree_1"
--'  38  2  ~/Repos/juxly-raf/NERD_tree_1
-|4,39,38,2,1520998135,"~/Repos/juxly-raf/NERD_tree_1"
--'  1  0  ~/Repos/juxly-raf/NERD_tree_1
-|4,39,1,0,1520998135,"~/Repos/juxly-raf/NERD_tree_1"
--'  38  2  ~/Repos/juxly-raf/NERD_tree_1
-|4,39,38,2,1520998135,"~/Repos/juxly-raf/NERD_tree_1"
--'  1  0  ~/Repos/juxly-raf/NERD_tree_1
-|4,39,1,0,1520998135,"~/Repos/juxly-raf/NERD_tree_1"
--'  38  2  ~/Repos/juxly-raf/NERD_tree_1
-|4,39,38,2,1520998135,"~/Repos/juxly-raf/NERD_tree_1"
--'  1  0  ~/Repos/juxly-raf/NERD_tree_1
-|4,39,1,0,1520998135,"~/Repos/juxly-raf/NERD_tree_1"
--'  38  2  ~/Repos/juxly-raf/NERD_tree_1
-|4,39,38,2,1520998135,"~/Repos/juxly-raf/NERD_tree_1"
--'  1  0  ~/Repos/juxly-raf/NERD_tree_1
-|4,39,1,0,1520998135,"~/Repos/juxly-raf/NERD_tree_1"
--'  103  4  ~/Repos/juxly-raf/services/fhir.js
-|4,39,103,4,1520998092,"~/Repos/juxly-raf/services/fhir.js"
--'  103  4  ~/Repos/juxly-raf/services/fhir.js
-|4,39,103,4,1520998092,"~/Repos/juxly-raf/services/fhir.js"
--'  103  4  ~/Repos/juxly-raf/services/fhir.js
-|4,39,103,4,1520998092,"~/Repos/juxly-raf/services/fhir.js"
--'  103  4  ~/Repos/juxly-raf/services/fhir.js
-|4,39,103,4,1520998092,"~/Repos/juxly-raf/services/fhir.js"
--'  103  4  ~/Repos/juxly-raf/services/fhir.js
-|4,39,103,4,1520998092,"~/Repos/juxly-raf/services/fhir.js"
--'  103  4  ~/Repos/juxly-raf/services/fhir.js
-|4,39,103,4,1520998092,"~/Repos/juxly-raf/services/fhir.js"
--'  103  4  ~/Repos/juxly-raf/services/fhir.js
-|4,39,103,4,1520998092,"~/Repos/juxly-raf/services/fhir.js"
--'  103  4  ~/Repos/juxly-raf/services/fhir.js
-|4,39,103,4,1520998092,"~/Repos/juxly-raf/services/fhir.js"
--'  103  4  ~/Repos/juxly-raf/services/fhir.js
-|4,39,103,4,1520998092,"~/Repos/juxly-raf/services/fhir.js"
--'  103  4  ~/Repos/juxly-raf/services/fhir.js
-|4,39,103,4,1520998092,"~/Repos/juxly-raf/services/fhir.js"
+|4,39,1,0,1528904208,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  1  0  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,1,0,1528904208,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  1  0  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,1,0,1528904208,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  1  0  ~/Documents/Repositories/dotfiles/.vim/vimrc
+|4,39,1,0,1528904208,"~/Documents/Repositories/dotfiles/.vim/vimrc"
+-'  31  0  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,39,31,0,1528808520,"~/Repos/deadlineoverdetail/SUMMARY.md"
+-'  31  0  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,39,31,0,1528808520,"~/Repos/deadlineoverdetail/SUMMARY.md"
+-'  31  0  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,39,31,0,1528808520,"~/Repos/deadlineoverdetail/SUMMARY.md"
+-'  31  0  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,39,31,0,1528808520,"~/Repos/deadlineoverdetail/SUMMARY.md"
+-'  31  0  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,39,31,0,1528808520,"~/Repos/deadlineoverdetail/SUMMARY.md"
+-'  31  0  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,39,31,0,1528808520,"~/Repos/deadlineoverdetail/SUMMARY.md"
+-'  31  0  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,39,31,0,1528808520,"~/Repos/deadlineoverdetail/SUMMARY.md"
+-'  31  0  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,39,31,0,1528808520,"~/Repos/deadlineoverdetail/SUMMARY.md"
+-'  29  1  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,39,29,1,1528808509,"~/Repos/deadlineoverdetail/SUMMARY.md"
+-'  29  1  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,39,29,1,1528808509,"~/Repos/deadlineoverdetail/SUMMARY.md"
+-'  29  1  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,39,29,1,1528808509,"~/Repos/deadlineoverdetail/SUMMARY.md"
+-'  29  1  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,39,29,1,1528808509,"~/Repos/deadlineoverdetail/SUMMARY.md"
+-'  29  1  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,39,29,1,1528808509,"~/Repos/deadlineoverdetail/SUMMARY.md"
+-'  29  1  ~/Repos/deadlineoverdetail/SUMMARY.md
+|4,39,29,1,1528808509,"~/Repos/deadlineoverdetail/SUMMARY.md"
 
 # History of marks within files (newest to oldest):
 
-> ~/Documents/Repositories/dotfiles/.vim/vimrc
-	*	1521038252	0
-	"	268	0
-	^	157	34
-	.	157	33
-	+	149	0
-	+	147	28
-	+	74	1
-	+	78	1
-	+	76	31
-	+	76	1
-	+	74	27
-	+	75	2
-	+	47	1
-	+	48	1
-	+	49	1
-	+	75	0
-	+	76	1
-	+	78	0
-	+	47	1
-	+	48	0
-	+	49	0
-	+	74	0
-	+	76	0
-	+	76	30
-	+	77	0
-	+	148	4
-	+	47	0
-	+	156	69
-	+	157	33
+> ~/.oh-my-zsh/custom/alias.zsh
+	*	1528910085	0
+	"	11	0
+	^	19	20
+	.	19	19
+	+	10	15
+	+	3	0
+	+	15	33
+	+	13	0
+	+	19	0
+	+	12	0
+	+	16	0
+	+	1	15
+	+	18	75
+	+	4	16
+	+	19	19
 
-> ~/Documents/Repositories/dotfiles/karabiner.json
-	*	1521037299	0
-	"	690	32
-
-> ~/Repos/juxly-raf/routes/index.js
-	*	1521031965	0
-	"	56	0
-
-> ~/Repos/juxly-raf/views/launch.jade
-	*	1521031907	0
-	"	33	6
-	.	23	0
-	+	23	0
-
-> ~/Repos/juxly-raf/.git/MERGE_MSG
-	*	1521031542	0
-	"	1	0
-
-> /Repos/jxtimeline/public/app/core/exception.js
-	*	1521031283	0
-	"	17	0
-
-> ~/Repos/juxly-raf/NERD_tree_2
-	*	1521031162	0
-	"	15	0
+> ~/Documents/Repositories/getodds/GetOdds/Lambda/examples/NERD_tree_1
+	*	1528910071	0
+	"	4	0
 	.	1	0
 	+	1	0
-
-> ~/Repos/juxly-raf/public/app/blocks/exception/exception-handler.provider.js
-	*	1521031128	0
-	"	27	0
-
-> ~/Repos/juxly-raf/public/app/blocks/exception/exception.service.js
-	*	1521031097	0
-	"	17	0
-
-> ~/Repos/juxly-raf/public/app/blocks/logger/logger.js
-	*	1521031081	0
-	"	24	0
-
-> ~/Repos/juxly-raf/services/fhir.js
-	*	1520998175	0
-	"	211	0
-	.	211	0
-	+	10	0
-	+	9	27
-	+	178	0
-	+	140	0
-	+	139	0
-	+	211	0
-	q	211	0
-
-> ~/Repos/juxly-raf/NERD_tree_1
-	*	1520998135	0
-	"	16	0
-	.	1	0
-	+	1	0
-
-> ~/Repos/juxly-raf/utils/http.js
-	*	1520998115	0
-	"	59	0
-
-> /Repos/jxtimeline/views/launch.jade
-	*	1520998026	0
-	"	32	0
-
-> /Repos/jxtimeline/NERD_tree_1
-	*	1520998009	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> /Repos/jxtimeline/services/tenantSettings.service.js
-	*	1520979646	0
-	"	67	2
-
-> /Repos/jxtimeline/services/usersettings.service.js
-	*	1520979637	0
-	"	55	15
-
-> ~/Repos/juxly-raf/services/userSettings.service.js
-	*	1520979621	0
-	"	28	4
-	.	33	0
-	+	28	32
-	+	29	0
-	+	33	0
-	q	28	4
-
-> ~/Repos/juxly-raf/routes/usersettings.js
-	*	1520979602	0
-	"	1	0
-
-> ~/Repos/juxly-raf/services/tenantSettings.service.js
-	*	1520979237	0
-	"	26	0
-
-> ~/Repos/juxly-raf/routes/settings.js
-	*	1520979167	0
-	"	5	0
 
 > ~/.oh-my-zsh/custom/james.zsh
-	*	1520954797	0
-	"	1	0
-	^	125	3
-	.	23	0
-	+	121	25
-	+	120	17
-	+	125	3
+	*	1528910068	0
+	"	4	1
+	^	22	139
+	.	22	138
+	+	105	25
+	+	104	17
+	+	109	3
 	+	12	0
-	+	23	0
-
-> ~/.oh-my-zsh/custom/alias.zsh
-	*	1520954788	0
-	"	15	0
-	^	15	0
-	.	15	0
-	+	9	15
-	+	2	0
-	+	14	33
-	+	12	0
-	+	17	0
-	+	11	0
-	+	15	0
-
-> ~/.oh-my-zsh/custom/example.zsh
-	*	1520954694	0
-	"	2	0
-
-> ~/.zshenv
-	*	1520954354	0
-	"	6	0
-	^	6	0
-	.	6	0
-	+	3	0
-	+	5	28
-	+	4	0
-	+	9	26
-	+	10	11
-	+	9	39
-	+	10	0
-	+	9	56
-	+	6	0
-
-> ~/Repos/juxly-raf/services/logger.service.js
-	*	1520889453	0
-	"	23	0
-	^	10	34
-	.	24	0
-	+	10	32
 	+	24	0
-	q	23	0
+	+	25	1
+	+	26	0
+	+	25	1
+	+	26	0
+	+	35	0
+	+	31	0
+	+	23	0
+	+	22	138
 
-> /Repos/jxtimeline/public/app/models/currentUser/current-user.js
-	*	1520872027	0
-	"	1	0
-	.	123	0
-	+	1	14
-	+	1	32
-	+	1	0
-	+	1	53
-	+	1	0
-	+	1	35
-	+	1	47
-	+	1	0
-	+	1	23
-	+	1	21
-	+	1	0
-	+	1	77
-	+	1	0
-	+	77	0
-	+	68	0
-	+	77	56
-	+	9	0
-	+	123	0
-	+	77	0
-	+	123	0
-	q	1	0
+> ~/Documents/Repositories/dotfiles/.vim/vimrc
+	*	1528904239	0
+	"	220	14
+	^	416	27
+	.	416	26
+	+	91	32
+	+	90	0
+	+	89	0
+	+	400	48
+	+	112	0
+	+	91	33
+	+	92	39
+	+	404	17
+	+	233	20
+	+	233	12
+	+	26	0
+	+	27	43
+	+	205	0
+	+	197	0
+	+	205	0
+	+	202	11
+	+	203	4
+	+	204	4
+	+	156	0
+	+	155	0
+	+	63	0
+	+	75	0
+	+	78	0
+	+	80	0
+	+	405	0
+	+	233	0
+	+	75	0
+	+	188	28
+	+	189	23
+	+	190	19
+	+	218	34
+	+	407	42
+	+	407	37
+	+	408	41
+	+	94	24
+	+	415	10
+	+	412	50
+	+	412	86
+	+	414	31
+	+	412	83
+	+	414	28
+	+	412	35
+	+	415	0
+	+	86	0
+	+	87	37
+	+	87	33
+	+	87	35
+	+	87	32
+	+	93	13
+	+	87	0
+	+	95	0
+	+	87	0
+	+	96	0
+	+	97	4
+	+	72	0
+	+	98	0
+	+	73	0
+	+	99	0
+	+	65	0
+	+	101	37
+	+	112	0
+	+	72	0
+	+	102	0
+	+	85	0
+	+	104	25
+	+	112	0
+	+	80	0
+	+	105	0
+	+	106	21
+	+	80	0
+	+	107	0
+	+	80	0
+	+	109	0
+	+	88	0
+	+	110	0
+	+	78	0
+	+	111	0
+	+	75	0
+	+	108	0
+	+	97	38
+	+	415	54
+	+	97	0
+	+	192	28
+	+	415	0
+	+	193	23
+	+	196	0
+	+	192	6
+	+	196	0
+	+	192	28
+	+	193	30
+	+	415	65
+	+	415	30
+	+	412	37
+	+	413	31
+	+	412	54
+	+	415	0
+	+	416	27
+	+	415	0
+	+	416	26
 
-> /Repos/jxtimeline/public/app/models/tenant/tenant.js
-	*	1520870052	0
-	"	17	4
+> ~/Repos/deadlineoverdetail/SUMMARY.md
+	*	1528808517	0
+	"	31	0
+	.	44	0
+	+	45	0
+	+	31	0
+	+	30	32
+	+	31	0
+	+	44	0
 
-> /Repos/jxtimeline/public/app/components/navigation/navigation.service.js
-	*	1520870047	0
-	"	12	0
+> ~/Repos/deadlineoverdetail/SUMMARY_LOCAL_37809.md
+	*	1528808502	0
+	"	30	0
 
-> /Repos/jxtimeline/public/app/models/currentUser/current-user-events.js
-	*	1520867621	0
-	"	8	6
+> ~/Repos/deadlineoverdetail/SUMMARY_BASE_37809.md
+	*	1528808457	0
+	"	27	0
+
+> ~/Repos/deadlineoverdetail/SUMMARY_REMOTE_37809.md
+	*	1528808457	0
+	"	29	0
+
+> ~/Documents/Repositories/dotfiles/.vim/after/ftplugin/html.vim
+	*	1528727074	0
+	"	2	63
+	^	2	64
+	.	2	63
+	+	2	63
+
+> ~/NERD_tree_1
+	*	1528727067	0
+	"	6	0
+	.	1	0
+	+	1	0
 
 > ~/.ssh/config
-	*	1520865719	0
-	"	11	0
+	*	1528471688	0
+	"	18	0
 
-> ~/Repos/juxly-raf/node_modules/strong-soap/src/parser/wsdl.js
-	*	1520606736	0
-	"	447	0
-	^	263	11
-	.	455	0
-	+	232	25
-	+	1	0
-	+	225	24
-	+	455	0
-	+	263	23
-	+	1	0
-	+	455	0
-	+	244	23
-	+	455	0
-	+	244	23
-	+	455	0
-	+	244	23
-	+	455	0
-	+	244	8
-	+	455	0
-	+	263	10
-	+	455	0
-	q	455	0
-
-> ~/Repos/juxly-raf/epic/services/epic.service.js
-	*	1520606293	0
-	"	127	0
-	^	39	81
-	.	127	0
-	+	28	83
-	+	28	82
-	+	28	83
-	+	28	82
-	+	41	41
-	+	39	10
-	+	40	66
-	+	1	0
-	+	45	38
-	+	1	0
-	+	28	82
-	+	1	0
-	+	28	65
-	+	1	0
-	+	28	45
-	+	1	0
-	+	28	78
-	+	1	0
-	+	28	82
-	+	1	0
-	+	28	56
-	+	1	0
-	+	28	83
-	+	1	0
-	+	40	10
-	+	39	9
-	+	40	9
-	+	39	8
-	+	1	0
-	+	39	10
-	+	40	8
-	+	41	85
-	+	1	0
-	+	63	13
-	+	66	0
-	+	64	20
-	+	1	0
-	+	8	0
-	+	39	80
-	+	127	0
-	q	127	0
-
-> ~/Repos/juxly-raf/epic/Epic.Clinical.Services-Clinical.wsdl
-	*	1520606120	0
-	"	2	18
-
-> ~/Repos/juxly-raf/utils/soap.js
-	*	1520605666	0
-	"	8	0
-	.	23	0
-	+	23	0
-	q	8	0
-
-> /Repos/juxly-raf-calculator/NERD_tree_1
-	*	1520605426	0
+> ~/Repos/deadlineoverdetail/.gitignore
+	*	1528384753	0
 	"	1	0
 	.	1	0
 	+	1	0
 
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/NERD_tree_1
-	*	1520605345	0
-	"	1	0
-	.	1	0
-	+	1	0
+> ~/Repos/juxly/developer-guide/.gitignore
+	*	1528384739	0
+	"	16	4
+	^	16	5
+	.	16	4
+	+	16	4
 
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/src/result/result.controller.ts
-	*	1520537362	0
-	"	23	4
-	^	58	32
-	.	115	0
-	+	30	0
-	+	53	77
-	+	56	4
-	+	57	67
-	+	58	136
-	+	60	0
-	+	116	0
-	+	6	22
-	+	58	113
-	+	58	43
-	+	116	0
-	+	58	32
-	+	116	0
-	+	50	2
-	+	59	2
-	+	114	2
-	+	115	0
+> ~/Repos/mock-smart-on-fhir-api/package-lock.json
+	*	1528382693	0
+	"	5	2
+	.	34	0
+	+	78	0
+	+	34	0
 
-> ~/[Vundle] Installer
-	*	1520537346	0
-	"	44	0
-	.	1	0
-	+	86	0
-	+	44	0
-	+	1	0
+> ~/Repos/mock-smart-on-fhir-api/package-lock_BASE_3457.json
+	*	1528382644	0
+	"	5	2
 
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/src/result/result.service.ts
-	*	1520537216	0
-	"	60	4
-	^	62	4
-	.	140	0
-	+	25	36
-	+	37	36
-	+	40	36
-	+	108	36
-	+	54	99
-	+	54	0
-	+	54	119
-	+	55	0
-	+	56	33
-	+	63	43
-	+	62	4
-	+	56	32
-	+	64	2
-	+	58	73
-	+	60	50
-	+	61	67
-	+	140	0
-	+	6	27
-	+	61	68
-	+	62	0
-	+	61	13
-	+	54	127
-	+	54	122
-	+	59	0
-	+	62	8
-	+	140	0
-	+	55	6
-	+	62	22
-	+	140	0
-	+	62	0
-	+	55	4
-	+	57	0
-	+	59	0
-	+	62	4
-	+	140	0
+> ~/Repos/mock-smart-on-fhir-api/package-lock_REMOTE_3457.json
+	*	1528382644	0
+	"	5	2
 
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/src/result/result.repository.ts
-	*	1520537192	0
-	"	36	31
-	^	41	32
-	.	41	31
-	+	60	0
-	+	71	0
-	+	72	0
-	+	89	0
-	+	36	65
-	+	37	0
-	+	48	2
-	+	40	34
-	+	41	43
-	+	42	16
-	+	43	57
-	+	46	35
-	+	114	0
-	+	36	63
-	+	41	31
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/src/entity/result.ts
-	*	1520536933	0
-	"	1	0
-	^	44	31
-	.	44	30
-	+	30	26
-	+	74	0
-	+	44	30
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/shared/middlewares/barrel.ts
-	*	1520536803	0
-	"	1	2
-	^	1	3
-	.	1	2
-	+	1	2
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/src/apikey/apikey.service.ts
-	*	1520536761	0
-	"	5	9
-	^	42	7
-	.	42	6
-	+	5	2
-	+	42	6
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/serverless.yml
-	*	1520536716	0
-	"	59	2
-	^	396	47
-	.	59	0
-	+	328	0
-	+	327	22
-	+	367	0
-	+	366	22
-	+	432	22
-	+	433	0
-	+	459	22
-	+	460	0
-	+	486	22
-	+	487	0
-	+	524	22
-	+	525	0
-	+	562	22
-	+	563	0
-	+	590	22
-	+	591	0
-	+	619	0
-	+	618	22
-	+	647	0
-	+	646	22
-	+	712	38
-	+	712	11
-	+	712	45
-	+	712	0
-	+	712	7
-	+	712	8
-	+	712	9
-	+	712	0
-	+	736	0
-	+	743	0
-	+	42	45
-	+	47	0
-	+	42	36
-	+	43	38
-	+	47	0
-	+	43	12
-	+	44	40
-	+	47	0
-	+	44	59
-	+	45	61
-	+	47	0
-	+	45	38
-	+	46	40
-	+	47	0
-	+	46	48
-	+	52	0
-	+	735	0
-	+	742	0
-	+	744	0
-	+	746	0
-	+	748	0
-	+	753	0
-	+	684	19
-	+	685	0
-	+	684	18
-	+	693	18
-	+	361	4
-	+	361	52
-	+	361	4
-	+	361	19
-	+	361	12
-	+	361	35
-	+	361	4
-	+	361	12
-	+	361	4
-	+	361	27
-	+	361	10
-	+	361	12
-	+	361	16
-	+	361	4
-	+	361	80
-	+	361	36
-	+	361	25
-	+	361	55
-	+	362	0
-	+	422	0
-	+	361	0
-	+	397	47
-	+	397	64
-	+	402	32
-	+	399	18
-	+	396	0
-	+	402	0
-	+	59	0
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/package.json
-	*	1520536693	0
-	"	62	4
-	.	75	0
-	+	75	0
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/.serverless-secrets.json
-	*	1520536357	0
-	"	2	0
-	^	2	0
-	.	2	0
-	+	2	0
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/src/index.ts
-	*	1520536345	0
-	"	7	0
-	^	42	58
-	.	42	57
-	+	18	50
-	+	61	52
-	+	72	0
-	+	18	0
-	+	61	0
-	+	69	6
-	+	73	0
-	+	18	9
-	+	6	38
-	+	42	71
-	+	6	39
-	+	42	57
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/NERD_tree_2
-	*	1520536344	0
-	"	16	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/src/result/result.ts
-	*	1520536293	0
+> ~/Repos/mock-smart-on-fhir-api/NERD_tree_1
+	*	1528313279	0
 	"	9	0
-	^	14	75
-	.	14	74
-	+	14	74
+	.	1	0
+	+	1	0
 
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/src/odds/odds.controller.ts
-	*	1520535215	0
-	"	1	0
-	^	18	34
-	.	186	0
-	+	25	24
-	+	185	0
-	+	12	391
-	+	186	0
-	+	18	34
-	+	12	0
+> ~/Repos/mock-smart-on-fhir-api/Dockerfile
+	*	1528305091	0
+	"	7	2
+	.	7	0
+	+	1	15
+	+	22	12
+	+	20	27
 	+	18	27
-	+	186	0
-	+	83	0
-	+	186	0
-	e	83	0
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/src/odds/match.repository.ts
-	*	1520534504	0
-	"	45	2
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/src/odds/odds.service.ts
-	*	1520534311	0
-	"	45	4
-	^	77	37
-	.	77	36
-	+	97	154
-	+	6	0
-	+	7	11
-	+	215	0
-	+	18	0
-	+	20	36
-	+	36	0
-	+	41	36
-	+	60	36
-	+	75	0
-	+	77	36
-
-> ~/Repos/waystone/MTN_Front/.git/MERGE_MSG
-	*	1520528706	0
-	"	1	0
-
-> ~/Repos/juxly-raf/epic/services/mapper.js
-	*	1520520086	0
-	"	17	0
-	.	17	0
-	+	17	12
-	+	66	0
-	+	13	14
-	+	14	8
-	+	15	8
-	+	16	8
-	+	17	15
-	+	66	0
-	+	17	0
-	q	66	0
-
-> ~/Repos/juxly-raf/public/app/areas/raf/raf.controller.js
-	*	1520519521	0
-	"	311	11
-	^	319	44
-	.	351	0
-	+	311	32
-	+	315	64
-	+	316	0
-	+	319	42
-	+	318	31
-	+	9	0
-	+	351	0
-	q	318	11
-
-> ~/Documents/Repositories/getodds/GetOdds/Lambda/NERD_tree_1
-	*	1520453395	0
-	"	15	0
-	.	1	0
-	+	1	0
-
-> ~/Repos/juxly-raf/public/app/areas/raf/raf.html
-	*	1520443789	0
-	"	16	41
-	.	1	0
-	+	1	86
-	+	15	0
-	+	16	41
-	+	1	0
-	+	16	41
-	+	1	0
-	q	16	41
-
-> ~/Repos/waystone/MTN_Front/.env
-	*	1520441257	0
-	"	1	0
-	^	1	23
-	.	1	22
-	+	2	43
-	+	4	24
-	+	3	46
-	+	4	0
-	+	1	0
-	+	8	5
-	+	7	7
-	+	8	6
-	+	7	6
-	+	1	22
-	+	9	80
-	+	1	22
-	+	9	81
-	+	1	22
-
-> ~/Documents/Repositories/getodds/GetOdds/OddsFeedApi/Controllers/Web/SignupController.cs
-	*	1520437013	0
-	"	244	0
-	.	115	0
-	+	115	0
-
-> ~/Documents/Repositories/getodds/GetOdds/OddsFeedApi/Controllers/Web/SignupController_BASE_35530.cs
-	*	1520436986	0
-	"	227	0
-
-> ~/Documents/Repositories/getodds/GetOdds/OddsFeedApi/Controllers/Web/SignupController_REMOTE_35530.cs
-	*	1520436986	0
-	"	244	0
-
-> ~/Documents/Repositories/getodds/GetOdds/Lambda/lambda-config.js
-	*	1520436981	0
-	"	11	0
-	.	1	0
-	+	9	0
-	+	11	0
-	+	1	0
-	q	11	0
-
-> ~/Documents/Repositories/getodds/GetOdds/Lambda/lambda-config_BASE_35530.js
-	*	1520436958	0
-	"	11	0
-
-> ~/Documents/Repositories/getodds/GetOdds/Lambda/lambda-config_REMOTE_35530.js
-	*	1520436958	0
-	"	11	0
-
-> ~/Documents/Repositories/getodds/GetOdds/GetOdds.Model/GetOdds.Model.csproj
-	*	1520436954	0
-	"	441	0
-	.	452	0
-	+	134	0
-	+	452	0
-
-> ~/Documents/Repositories/getodds/GetOdds/GetOdds.Model/GetOdds.Model_BASE_35530.csproj
-	*	1520436911	0
-	"	353	0
-
-> ~/Documents/Repositories/getodds/GetOdds/GetOdds.Model/GetOdds.Model_REMOTE_35530.csproj
-	*	1520436911	0
-	"	423	0
-
-> ~/Repos/waystone/MTN_Front/NERD_tree_1
-	*	1520434944	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/Repos/juxly-raf/public/app/data/condition.dataservice.js
-	*	1520364534	0
-	"	31	6
-
-> ~/Repos/juxly-raf/public/app/data/raf.dataservice.js
-	*	1520364377	0
-	"	67	16
-
-> ~/Repos/juxly-raf/public/app/areas/raf/raf.service.js
-	*	1520364372	0
-	"	199	8
-
-> ~/Repos/juxly-raf/public/app/meat/meat.service.js
-	*	1520350478	0
-	"	9	151
-	^	9	152
-	.	143	0
-	+	9	151
-	+	143	0
-	q	9	151
-
-> /Repos/juxly-raf-calculator/config/config.js
-	*	1520349891	0
-	"	53	0
-	^	37	14
-	.	53	0
-	+	14	37
-	+	48	0
-	+	16	9
-	+	48	0
-	+	35	17
-	+	48	0
-	+	37	13
-	+	48	0
-	+	4	0
-	+	16	0
-	+	35	0
-	+	1	0
-	+	53	0
-	q	53	0
-
-> /Repos/juxly-raf-calculator/config/config_BASE_10227.js
-	*	1520349813	0
-	"	49	0
-
-> /Repos/juxly-raf-calculator/config/config_REMOTE_10227.js
-	*	1520349813	0
-	"	53	0
-
-> /Repos/juxly-raf-calculator/.git/MERGE_MSG
-	*	1520349786	0
-	"	1	0
-
-> /Repos/juxly-raf-calculator/routes/document.js
-	*	1520349701	0
-	"	2	0
-	.	54	0
-	+	1	0
-	+	10	21
-	+	1	0
 	+	10	0
-	+	54	0
-	q	54	0
-
-> ~/Repos/juxly-raf/public/app/documents/document.service.js
-	*	1520349628	0
-	"	1	0
-	.	53	0
-	+	53	0
-	q	1	0
-
-> ~/Repos/juxly-raf/public/app/fhir/fhir.service.js
-	*	1520349603	0
-	"	4	0
-	.	135	0
 	+	7	0
-	+	135	0
-	q	1	0
 
-> /Repos/juxly-raf-calculator/services/document.service.js
-	*	1520348442	0
-	"	19	39
-	^	25	16
+> ~/Repos/mock-smart-on-fhir-api/services/base.service.js
+	*	1528305009	0
+	"	3	0
+
+> ~/Repos/mock-smart-on-fhir-api/models/bundle.js
+	*	1528304995	0
+	"	1	0
+
+> ~/Repos/juxly/ibh-app/public/app/areas/patient/patient.html
+	*	1528223305	0
+	"	29	0
 	.	1	0
-	+	25	15
+	+	29	0
 	+	1	0
 	q	29	0
 
-> /Repos/juxly-raf-calculator/services/fhir.service.js
-	*	1520347072	0
-	"	46	0
-	^	12	44
+> ~/Repos/juxly/ibh-app/public/app/areas/patient/patient_BASE_50489.html
+	*	1528223241	0
+	"	29	0
+
+> ~/Repos/juxly/ibh-app/public/app/areas/patient/patient_REMOTE_50489.html
+	*	1528223241	0
+	"	29	0
+
+> ~/Repos/waystone/MTN_Front/views/myaccount/myaccount.pug
+	*	1527861982	0
+	"	1	0
+	.	75	0
+	+	24	0
+	+	75	0
+
+> ~/Repos/waystone/MTN_Front/views/myaccount/myaccount_REMOTE_26240.pug
+	*	1527861824	0
+	"	1	0
+
+> ~/Repos/waystone/MTN_Front/views/myaccount/myaccount_BASE_26240.pug
+	*	1527861823	0
+	"	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__XGeJUt.markdown
+	*	1527800136	0
+	"	15	0
 	.	1	0
-	+	11	37
-	+	12	43
+	+	51	0
 	+	1	0
-	q	46	0
 
-> ~/Repos/juxly-raf/public/app/raf/rafItem.template.html
-	*	1520346582	0
-	"	22	0
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__rx1bhs.markdown
+	*	1527800135	0
+	"	1	0
 
-> /Repos/juxly-raf-calculator/.env
-	*	1520346509	0
-	"	5	16
-	.	5	16
-	+	5	16
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__lOa1Eo.markdown
+	*	1527800133	0
+	"	60	64
+	^	51	65
+	.	62	0
+	+	14	78
+	+	15	80
+	+	16	72
+	+	17	74
+	+	19	3
+	+	19	70
+	+	20	74
+	+	21	65
+	+	22	63
+	+	23	61
+	+	24	69
+	+	26	8
+	+	27	32
+	+	28	41
+	+	29	52
+	+	6	78
+	+	61	62
+	+	28	47
+	+	29	52
+	+	28	47
+	+	28	59
+	+	28	47
+	+	29	19
+	+	28	66
+	+	29	52
+	+	28	38
+	+	29	51
+	+	30	55
+	+	31	56
+	+	31	62
+	+	42	80
+	+	52	19
+	+	52	3
+	+	52	0
+	+	61	62
+	+	54	79
+	+	55	78
+	+	56	78
+	+	55	78
+	+	61	61
+	+	59	78
+	+	61	77
+	+	61	73
+	+	61	77
+	+	31	12
+	+	30	79
+	+	31	74
+	+	30	79
+	+	51	74
+	+	62	0
 
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/secrets.yml
-	*	1520273437	0
-	"	26	0
-	.	2	0
-	+	2	0
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/shared/logger.ts
-	*	1520272854	0
-	"	4	4
-	^	6	85
-	.	4	0
-	+	4	0
-	+	4	20
-	+	19	0
-	+	4	37
-	+	6	97
-	+	7	0
-	+	6	7
-	+	7	10
-	+	6	84
-	+	4	0
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/src/functions/logger.ts
-	*	1520272451	0
-	"	43	19
-	^	65	20
-	.	65	19
-	+	43	8
-	+	44	51
-	+	45	48
-	+	22	28
-	+	23	4
-	+	53	31
-	+	79	0
-	+	13	9
-	+	22	29
-	+	58	0
-	+	79	0
-	+	1	0
-	+	79	0
-	+	58	10
-	+	58	0
-	+	71	0
-	+	79	0
-	+	3	103
-	+	79	0
-	+	3	0
-	+	3	103
-	+	13	0
-	+	58	0
-	+	58	6
-	+	58	1
-	+	79	0
-	+	58	0
-	+	79	0
-	+	71	0
-	+	79	0
-	+	67	0
-	+	58	6
-	+	69	6
-	+	25	108
-	+	24	4
-	+	39	0
-	+	79	0
-	+	64	7
-	+	61	7
-	+	64	7
-	+	67	0
-	+	62	9
-	+	61	53
-	+	61	116
-	+	59	15
-	+	59	8
-	+	79	0
-	+	8	92
-	+	9	0
-	+	66	32
-	+	76	16
-	+	79	0
-	+	61	0
-	+	37	11
-	+	79	0
-	+	68	20
-	+	79	0
-	+	57	0
-	+	58	0
-	+	62	11
-	+	79	0
-	+	11	46
-	+	79	0
-	+	64	35
-	+	79	0
-	+	62	6
-	+	66	10
-	+	79	0
-	+	66	6
-	+	58	6
-	+	57	0
-	+	79	0
-	+	68	37
-	+	29	9
-	+	26	15
-	+	64	0
-	+	75	11
-	+	63	38
-	+	79	0
-	+	58	0
-	+	66	0
-	+	79	0
-	+	26	36
-	+	63	32
-	+	79	0
-	+	26	0
-	+	63	56
-	+	58	0
-	+	66	5
-	+	79	0
-	+	59	175
-	+	59	131
-	+	60	86
-	+	80	0
-	+	32	31
-	+	65	56
-	+	66	8
-	+	65	17
-	+	84	0
-	+	65	19
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/src/services/cache.service.ts
-	*	1520271512	0
-	"	58	0
-	^	27	39
-	.	27	38
-	+	7	36
-	+	27	38
-
-> ~/Repos/juxly-raf/epic/config.json
-	*	1520004762	0
-	"	22	6
-	.	22	0
-	+	22	0
-
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/src/buckets.ts
-	*	1519928926	0
-	"	4	17
-	.	4	0
-	+	4	19
-	+	8	0
-	+	4	19
-	+	7	14
-	+	6	10
-	+	4	19
-	+	5	13
-	+	4	0
-
-> ~/Documents/Repositories/dotfiles/.vim/after/ftplugin/[Vundle] Installer
-	*	1519928902	0
-	"	44	0
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__xEUFy1.markdown
+	*	1527791711	0
+	"	18	2
 	.	1	0
-	+	197	0
-	+	161	0
-	+	124	0
-	+	86	0
+	+	51	0
+	+	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__NjYzNP.markdown
+	*	1527791710	0
+	"	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__Y2KEtz.markdown
+	*	1527790155	0
+	"	17	7
+	^	19	8
+	.	20	80
+	+	38	0
+	+	39	79
+	+	40	78
+	+	41	69
+	+	6	81
+	+	6	82
 	+	44	0
+	+	13	79
+	+	20	16
+	+	20	80
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__U79sRE.markdown
+	*	1527789978	0
+	"	18	0
+	.	1	0
+	+	51	0
 	+	1	0
 
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/examples/loggerEvent.json
-	*	1519921407	0
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__ToyokE.markdown
+	*	1527789976	0
+	"	22	44
+	^	22	46
+	.	24	0
+	+	13	62
+	+	14	53
+	+	15	52
+	+	16	53
+	+	17	6
+	+	16	64
+	+	15	77
+	+	16	79
+	+	17	0
+	+	18	0
+	+	19	80
+	+	20	70
+	+	24	0
+	+	20	73
+	+	21	79
+	+	22	46
+	+	24	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__uxEZBy.markdown
+	*	1527789916	0
 	"	1	0
 
-> ~/Documents/Repositories/dotfiles/.vim/after/ftplugin/javascript.vim
-	*	1519919504	0
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__rNQIV6.markdown
+	*	1527789497	0
+	"	27	74
+	^	27	75
+	.	27	75
+	+	24	0
+	+	25	80
+	+	26	78
+	+	27	75
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__qQEfKM.markdown
+	*	1527789407	0
+	"	8	10
+	.	8	0
+	+	3	79
+	+	4	79
+	+	5	73
+	+	6	75
+	+	7	80
+	+	8	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__h91q4A.markdown
+	*	1527788979	0
+	"	23	0
+	^	23	60
+	.	22	73
+	+	4	74
+	+	6	74
+	+	7	13
+	+	9	73
+	+	10	61
+	+	11	63
+	+	13	51
+	+	13	59
+	+	16	0
+	+	16	23
+	+	12	60
+	+	12	68
+	+	16	0
+	+	16	77
+	+	18	1
+	+	19	1
+	+	21	7
+	+	23	12
+	+	23	13
+	+	12	77
+	+	23	13
+	+	23	12
+	+	23	13
+	+	22	73
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__1Wbnha.markdown
+	*	1527788957	0
+	"	12	0
+	.	1	0
+	+	50	0
+	+	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__1uMnLR.markdown
+	*	1527788953	0
+	"	18	0
+	^	10	29
+	.	14	0
+	+	24	0
+	+	5	0
+	+	7	0
+	+	9	0
+	+	11	0
+	+	15	0
+	+	17	0
+	+	19	0
+	+	21	0
+	+	23	0
+	+	29	0
+	+	31	0
+	+	33	0
+	+	35	0
+	+	37	0
+	+	38	0
+	+	25	0
+	+	26	27
+	+	26	28
+	+	28	22
+	+	3	21
+	+	3	80
+	+	41	0
+	+	42	28
+	+	39	0
+	+	40	21
+	+	10	28
+	+	15	0
+	+	12	0
+	+	15	0
+	+	14	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__SSe4Nm.markdown
+	*	1527781079	0
+	"	13	0
+	.	1	0
+	+	48	0
+	+	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__LhoTM_.markdown
+	*	1527781041	0
+	"	12	0
+	.	1	0
+	+	48	0
+	+	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__nhhGQi.markdown
+	*	1527781020	0
+	"	12	30
+	^	32	31
+	.	32	30
+	+	6	42
+	+	8	0
+	+	9	0
+	+	11	0
+	+	13	0
+	+	15	0
+	+	17	0
+	+	19	0
+	+	21	0
+	+	23	0
+	+	25	0
+	+	26	38
+	+	27	0
+	+	29	0
+	+	33	0
+	+	7	0
+	+	34	0
+	+	27	0
+	+	31	0
+	+	32	30
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__1UqlTG.markdown
+	*	1527780988	0
+	"	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__eppwej.markdown
+	*	1527777932	0
+	"	13	44
+	^	9	60
+	.	12	79
+	+	6	74
+	+	5	81
+	+	12	71
+	+	13	0
+	+	12	71
+	+	11	79
+	+	12	79
+	+	19	9
+	+	18	79
+	+	24	80
+	+	38	0
+	+	12	66
+	+	12	79
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__YyzrMT.markdown
+	*	1527777401	0
+	"	1	0
+
+> ~/Documents/Repositories/getodds/GetOdds/Lambda/text.md
+	*	1527730712	0
+	"	13	67
+	^	22	55
+	.	25	80
+	+	25	80
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__V5cyGh.markdown
+	*	1527723799	0
+	"	2	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__ovw67b.markdown
+	*	1527723797	0
+	"	15	0
+	.	1	0
+	+	48	0
+	+	1	0
+
+> ~/Documents/Repositories/getodds/GetOdds/Lambda/text.txt
+	*	1527723737	0
+	"	22	33
+	^	1	36
+	.	1	0
+	+	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__RZmMJV.markdown
+	*	1527723696	0
+	"	1	0
+	.	40	0
+	+	40	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__O8sIg_.markdown
+	*	1527723643	0
+	"	15	0
+	.	1	0
+	+	48	0
+	+	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__3WcKY9.markdown
+	*	1527723591	0
+	"	1	0
+	.	33	0
+	+	33	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__lbeHmS.markdown
+	*	1527723579	0
+	"	17	0
+	.	1	0
+	+	48	0
+	+	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__md2qq2.markdown
+	*	1527723501	0
+	"	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__nfy0wz.markdown
+	*	1527723480	0
+	"	14	0
+	.	1	0
+	+	48	0
+	+	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__TZ3_nm.markdown
+	*	1527723465	0
+	"	1	0
+	.	14	0
+	+	14	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__JzfPsy.markdown
+	*	1527723318	0
 	"	5	0
+	.	42	0
+	+	42	0
 
-> ~/Documents/Repositories/getodds/GetOdds/Serverless/[Vundle] Installer
-	*	1519919414	0
-	"	43	0
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__6j41GA.markdown
+	*	1527723266	0
+	"	15	0
 	.	1	0
-	+	43	0
+	+	48	0
 	+	1	0
 
-> ~/Documents/Repositories/dotfiles/.vim/after/ftplugin/typescript.vim
-	*	1519919149	0
+> ~/Documents/Repositories/getodds/GetOdds/Lambda/[Vundle] Installer
+	*	1527723159	0
+	"	45	0
+	.	1	0
+	+	1	0
+
+> ~/.gitconfig
+	*	1527706166	0
+	"	51	4
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__fQ_qvt.markdown
+	*	1527703823	0
+	"	3	7
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__Mb7ne0.markdown
+	*	1527703807	0
+	"	15	0
+	.	1	0
+	+	48	0
+	+	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__OjiyXt.markdown
+	*	1527703778	0
+	"	3	67
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__Zy6Heq.markdown
+	*	1527703599	0
+	"	15	0
+	.	1	0
+	+	48	0
+	+	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__rlqVJW.markdown
+	*	1526059869	0
+	"	103	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__KkPiM0.markdown
+	*	1526059866	0
+	"	96	0
+	.	1	0
+	+	96	0
+	+	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__4ollaQ.markdown
+	*	1526059849	0
+	"	100	13
+	^	100	14
+	.	99	80
+	+	4	0
+	+	16	0
+	+	17	19
+	+	17	18
+	+	17	19
+	+	19	77
+	+	20	73
+	+	21	68
+	+	23	72
+	+	23	71
+	+	23	80
+	+	24	80
+	+	25	75
+	+	27	0
+	+	28	78
+	+	29	27
+	+	31	72
+	+	32	78
+	+	33	80
+	+	34	78
+	+	35	73
+	+	36	79
+	+	37	51
+	+	39	72
+	+	41	78
+	+	42	79
+	+	43	18
+	+	45	78
+	+	47	0
+	+	48	77
+	+	49	76
+	+	50	76
+	+	51	76
+	+	52	59
+	+	54	78
+	+	55	12
+	+	57	17
+	+	58	0
+	+	59	0
+	+	62	23
+	+	57	19
+	+	62	70
+	+	63	11
+	+	62	70
+	+	64	0
+	+	68	74
+	+	70	0
+	+	73	0
+	+	72	3
+	+	72	78
+	+	73	0
+	+	74	0
+	+	75	28
+	+	77	83
+	+	79	0
+	+	80	70
+	+	82	0
+	+	83	55
+	+	84	0
+	+	86	77
+	+	88	72
+	+	89	18
+	+	90	0
+	+	91	0
+	+	92	0
+	+	95	77
+	+	97	0
+	+	99	80
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__vg4SPU.markdown
+	*	1526050525	0
+	"	9	0
+	.	1	0
+	+	96	0
+	+	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__3EgmE5.markdown
+	*	1525898720	0
+	"	13	34
+	^	13	35
+	.	12	76
+	+	7	0
+	+	8	77
+	+	10	0
+	+	11	76
+	+	12	76
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__ougdDI.markdown
+	*	1525893970	0
+	"	90	0
+	.	1	0
+	+	96	0
+	+	1	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__Geeknote__207Rdb.markdown
+	*	1525891983	0
+	"	7	0
+
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__eOKzrU.markdown
+	*	1525891912	0
+	"	9	0
+	.	1	0
+	+	96	0
+	+	1	0
+
+> ~/.oh-my-zsh/ali
+	*	1525891881	0
 	"	1	0
 
-> ~/Repos/juxly-raf/epic/models/EpicActiveProblem.js
-	*	1519916146	0
-	"	49	0
+> /private/var/folders/2n/8l646j9x0dx68_36272t7qk80000gn/T/__GeeknoteExplorer__Req4XL.markdown
+	*	1525891802	0
+	"	34	0
+	.	1	0
+	+	1	0
 
-> ~/Repos/juxly-raf/views/includes/head.jade
-	*	1519844431	0
-	"	116	4
+> ~/Repos/OpenSource/geeknote/NERD_tree_1
+	*	1525891729	0
+	"	9	0
+	.	1	0
+	+	1	0
 
-> ~/Repos/juxly/jx-smart-sso/.git/MERGE_MSG
-	*	1519834212	0
+> ~/.zshrc
+	*	1525891717	0
+	"	8	0
+
+> ~/Documents/Repositories/getodds/GetOdds/Lambda/functions/[Vundle] Installer
+	*	1525878614	0
+	"	45	0
+	.	1	0
+	+	45	0
+	+	1	0
+
+> ~/Documents/Repositories/dotfiles/.vim/_snippets/typescript.snippets
+	*	1525017412	0
+	"	4	0
+	^	5	2
+	.	5	1
+	+	1	13
+	+	5	1
+
+> ~/Documents/Repositories/dotfiles/.vim/_snippets/javascript.snippets
+	*	1525017261	0
+	"	3	0
+
+> ~/Documents/Repositories/dotfiles/.vim/_snippets/all.snippets
+	*	1525017090	0
 	"	1	0
 
-> ~/Repos/juxly/jx-smart-sso/token.service.js
-	*	1519834194	0
-	"	249	0
-	^	184	50
+> /Repos/hubot2/[Vundle] Installer
+	*	1524601542	0
+	"	41	0
 	.	1	0
-	+	184	33
+	+	41	0
 	+	1	0
-	+	183	132
-	+	184	49
-	+	1	0
-	q	249	0
 
-> ~/Repos/juxly/jx-smart-sso/whitelist.json
-	*	1519833786	0
-	"	4	32
-	^	4	33
-	.	4	32
-	+	5	2
-	+	4	32
+> ~/Repos/juxly/ibh-app/public/app/app.constants.js
+	*	1524597323	0
+	"	1	0
+
+> ~/Documents/Repositories/dotfiles/.vim/[Vundle] Installer
+	*	1524445415	0
+	"	40	0
+	.	1	0
+	+	40	0
+	+	1	0
+
+> /usr/local/Cellar/vim/8.0.1250/share/vim/vim80/doc/tagsrch.txt
+	*	1524331006	0
+	"	129	39
+
+> ~/Repos/[Vundle] Installer
+	*	1524254457	0
+	"	36	0
+	.	1	0
+	+	36	0
+	+	1	0
+
+> ~/Repos/sts/sts_vue/[Vundle] Installer
+	*	1524226060	0
+	"	35	0
+	.	1	0
+	+	35	0
+	+	1	0
+
+> ~/[Vundle] Installer
+	*	1524094517	0
+	"	33	0
+	.	1	0
+	+	522	0
+	+	480	0
+	+	437	0
+	+	395	0
+	+	352	0
+	+	308	0
+	+	270	0
+	+	234	0
+	+	202	0
+	+	178	0
+	+	148	0
+	+	117	0
+	+	84	0
+	+	58	0
+	+	33	0
+	+	1	0
+
+> ~/.config/alacritty/alacritty.yml
+	*	1524064494	0
+	"	224	7
+	^	224	8
+	.	224	7
+	+	224	7
+
+> ~/Repos/juxly/ibh-app/[Vundle] Installer
+	*	1523890895	0
+	"	26	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Repositories/dotfiles/.vim/minimal_vimrc
+	*	1523802153	0
+	"	33	0
+	^	33	0
+	.	33	0
+	+	33	0
+
+> /usr/local/Cellar/vim/8.0.1250/share/vim/vim80/doc/repeat.txt
+	*	1523717847	0
+	"	307	3
+
+> ~/.config/nvim/[Vundle] Installer
+	*	1523658060	0
+	"	35	0
+	.	1	0
+	+	1	0
+
+> ~/Repos/waystone/MTN_Front/[Vundle] Installer
+	*	1523499560	0
+	"	35	0
+	.	1	0
+	+	35	0
+	+	1	0
+
+> ~/Repos/test-react-native/[Vundle] Installer
+	*	1523481437	0
+	"	35	0
+	.	1	0
+	+	35	0
+	+	1	0
+
+> ~/Repos/synthesize/electronApp/src/app/root-component.tsx
+	*	1523478143	0
+	"	10	0
+
+> ~/Repos/synthesize/electronApp/src/views/theme/styles.ts
+	*	1523478117	0
+	"	32	0
+
+> ~/Repos/synthesize/electronApp/NERD_tree_1
+	*	1523478041	0
+	"	14	0
+	.	1	0
+	+	1	0
+
+> ~/Repos/synthesize/electronApp/package.json
+	*	1523477992	0
+	"	59	4
+
+> ~/Repos/synthesize/electronApp/package
+	*	1523477977	0
+	"	1	0

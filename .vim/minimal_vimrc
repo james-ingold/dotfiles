@@ -1,0 +1,33 @@
+set runtimepath+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'trevordmiller/nova-vim'
+Plugin 'w0rp/ale'
+Plugin 'scrooloose/nerdtree'
+
+
+call vundle#end()
+filetype plugin indent on
+
+nnoremap ; :
+
+colorscheme nova
+
+if has('nvim')
+    set inccommand=
+    set termguicolors
+    set guicursor=
+    let g:elite_mode=1
+endif
+
+set shiftwidth=2 softtabstop=2 expandtab
+set wrap
+set textwidth=80
+set linebreak
+set colorcolumn=160
+set visualbell
+set signcolumn=yes
+let g:ale_sign_column_always = 1
+nmap <silent> <C-s> :NERDTreeToggle<CR>

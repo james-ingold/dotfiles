@@ -1,5 +1,5 @@
 if executable('html-beautify')
-    let &l:formatprg = 'html-beautify -f - -I -i 2 -A force-expand-multiline -w 80 -s ' . &shiftwidth
+    let &l:formatprg = 'html-beautify -f - -I -i 2 -w 80 -A auto -s ' . &shiftwidth
 endif
 
 augroup htmlformat

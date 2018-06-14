@@ -1,0 +1,16 @@
+snippet reactComponent
+import * as React from 'react';
+export class ${1:snip.fn} extends React.Component<{}> {
+	static propTypes = {
+	 ${3:name}: React.PropTypes.${4:string},
+	};
+	constructor(props) {
+		super(props);
+	}
+	render() {
+		return (
+			<${5:div}></${5:div}>
+		);
+	}
+}
+endsnippet
