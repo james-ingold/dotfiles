@@ -7,7 +7,7 @@ set visualbell                  " turn on the "visual bell" - which is much quie
 set ruler                       " show the cursor position all the time
 set laststatus=2                " make the last line where the status is two lines deep so you can see status always
 set backspace=indent,eol,start  " make that backspace key work the way it should
-"set background=dark             " Use colours that work well on a dark background (Console is usually black)
+set background=dark             " Use colours that work well on a dark background (Console is usually black)
 set showmode                    " show the current mode
 set clipboard=unnamed           " set clipboard to unnamed to access the system clipboard under windows
 set hidden                      " No warnings about hidden buffers ie buffers with changes
@@ -31,8 +31,9 @@ set wildmode=full
 set completeopt-=preview
 "set nobackup
 "set nowritebackup
-let g:python_host_prog = '/usr/local/bin/python2'
+let g:python_host_prog = '/usr/local/bin/python2.7'
 let g:python3_host_prog = '/Library/Frameworks/Python.framework/Versions/3.6/bin/python3'
+let g:ycm_server_python_interpreter = '/usr/local/bin/python'
 let g:mapleader = ','
 let g:solarized_termcolors=256
 let g:sort_motion_flags = 'ui'
@@ -59,6 +60,18 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'vim-syntastic/syntastic'
 "Plugin 'scrooloose/nerdcommenter'
+" General VIM
+" :BD keeps window intact
+Plugin 'qpkorr/vim-bufkill'
+Plugin 'tpope/vim-eunuch'
+Plugin 'valloric/youcompleteme'
+" Complete
+" Plugin 'Shougo/deoplete.nvim'
+" Plugin 'Shougo/neoinclude.vim'
+
+"HTML
+Plugin 'docunext/closetag.vim'
+
 Plugin 'mattn/emmet-vim'
 Plugin 'klen/python-mode'   "python coding awesomeness
 Plugin 'ervandew/supertab'
@@ -70,12 +83,11 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdtree'
 Plugin 'editorconfig/editorconfig-vim'  "use the editor config, luke
-Plugin 'valloric/youcompleteme'
 "Plugin 'christoomey/vim-sort-motion'
 Plugin 'suan/vim-instant-markdown' "previewing markdown
 "Plugin 'easymotion/vim-easymotion'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'neilagabriel/vim-geeknote'
+"Plugin 'neilagabriel/vim-geeknote'
 Plugin 'mileszs/ack.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'junegunn/fzf.vim'
@@ -177,6 +189,7 @@ let g:ale_sign_column_always = 1
 " let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '✓']
 " Set this. Airline will handle the rest.
 let g:airline#extensions#ale#enabled = 1
+let g:ale_completion_enabled = 1
 let g:ale_fixers = {
   \  'javascript': ['eslint'],
   \  'typescript': ['tslint']
@@ -184,7 +197,7 @@ let g:ale_fixers = {
 let g:ale_fix_on_save = 1
 let g:ale_linters = {
   \ 'javascript': ['eslint'],
-  \ 'typescript': ['tslint'],
+  \ 'typescript': ['tsserver'],
   \ 'coffee': ['coffeelint'],
   \ 'pug': ['pug-lint'],
   \ 'vim': ['vint'],
@@ -202,6 +215,8 @@ augroup ALECMD
 augroup END
 nnoremap <silent> <leader>aj :ALENext<cr>
 nnoremap <silent> <leader>ak :ALEPrevious<cr>
+"deocomplete
+let g:deoplete#enable_at_startup = 1
 "Youcompleteme settings
 let g:ycm_filetype_blacklist = {
     \'typescript' : 1
@@ -215,7 +230,7 @@ let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
 let g:UltiSnipsSnippetsDir='~/.vim/_snippets'
 let g:UltiSnipsSnippetDirectories=['_snippets']
-let g:UltiSnipsUsePythonVersion = 3
+" let g:UltiSnipsUsePythonVersion = 2
 " VIMDiff Settings
 map <silent> <leader>2 :diffget 2<CR> :diffupdate<CR> ",2 to get change from buffer number 2"
 map <silent> <leader>3 :diffget 3<CR> :diffupdate<CR>
@@ -229,7 +244,7 @@ nnoremap <silent> <leader>ga :BCommits<CR>
 nnoremap <silent> <leader>: :BLines<CR>
 nnoremap <silent> <C-r> :BTags<CR>
 nnoremap <silent> <leader>O :Tags<CR>
-let g:fzf_tags_command = 'ctags -R --exclude={node_modules,.git,bower_components,dist,docs,snippets,tests,utils,assets}'
+let g:fzf_tags_command = 'ctags -R --exclude={node_modules,.git,bower_components,dist,docs,snippets,tests,utils,assets,.serverless}'
 "set tags=./tags,tags;
 
 nnoremap <F5> :GundoToggle<CR>
