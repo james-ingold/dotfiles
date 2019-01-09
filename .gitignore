@@ -3,3 +3,6 @@
 /.vim/.netrwhist
 .vim/bundle
 /.vim/files/info/viminfo
+/tags
+/tags.lock
+/tags.temp

@@ -4,12 +4,49 @@ snippet vuec
 
 <script>
 export default {
-    components: {},
-    computed: {},
-    data () {
-    $0
-     return {}
+  components: {},
+  computed: {},
+  data () {
+    return {
+     $0
     }
+  }
 }
 </script>
+endsnippet
+
+snippet nscustom
+var GridLayout = require('ui/layouts/grid-layout').GridLayout
+
+var ScrapbookList = (function (_super) {
+    global.__extends(ScrapbookList, _super)
+
+        function ScrapbookList() {
+        _super.call(this)
+        this.rows = "*"
+        this.columns = "*"
+        }
+        return ScrapbookList
+})(GridLayout)
+exports.ScrapbookList = ScrapbookList
+endsnippet
+
+snippet cl
+console.log('${1}')
+endsnippet
+
+snippet require
+const $1 = require('${1}')
+endsnippet
+
+snippet import
+import $1 from '${2}'
+endsnippet
+
+snippet ife
+if ($1) {
+    $2
+} else {
+    $3
+}
 endsnippet

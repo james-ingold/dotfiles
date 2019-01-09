@@ -7,3 +7,5 @@ Collection of system files
 ln -sv ~/Documents/Repositories/dotfiles/karabiner.json ~/.config/karabiner/
 
 ln -sv ~/Documents/Repositories/dotfiles/zsh/.zshrc ~/.zshrc
+
+ln -sv ~/Documents/Repositories/dotfiles/default-packages $NVM_DIR/

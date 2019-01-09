@@ -56,7 +56,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx dotenv geeknote tmuxinator aws heroku httpie node npm git-flow)
+plugins=(git osx dotenv geeknote tmuxinator aws heroku httpie node npm git-flow kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -146,3 +146,11 @@ if _has fzf && _has rg; then
 fi
 
 PATH=$HOME/bin:$PATH
+
+###-tns-completion-start-###
+if [ -f /Users/jamesingold/.tnsrc ]; then 
+    source /Users/jamesingold/.tnsrc 
+fi
+###-tns-completion-end-###
+#
+PATH=$PATH:/Users/jamesingold/Library/Python/3.6/bin  

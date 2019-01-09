@@ -121,6 +121,7 @@ Plugin 'kchmck/vim-coffee-script' "because sometime I enjoy the pain
 Plugin 'othree/html5.vim'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'ludovicchabant/vim-gutentags'
 " All of your Plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
@@ -192,7 +193,8 @@ let g:airline#extensions#ale#enabled = 1
 let g:ale_completion_enabled = 1
 let g:ale_fixers = {
   \  'javascript': ['eslint'],
-  \  'typescript': ['tslint']
+  \  'typescript': ['tslint'],
+  \  'vue': ['eslint', 'prettier']
   \ }
 let g:ale_fix_on_save = 1
 let g:ale_linters = {
@@ -244,7 +246,7 @@ nnoremap <silent> <leader>ga :BCommits<CR>
 nnoremap <silent> <leader>: :BLines<CR>
 nnoremap <silent> <C-r> :BTags<CR>
 nnoremap <silent> <leader>O :Tags<CR>
-let g:fzf_tags_command = 'ctags -R --exclude={node_modules,.git,bower_components,dist,docs,snippets,tests,utils,assets,.serverless}'
+let g:fzf_tags_command = 'ctags -R --exclude={node_modules,.git,bower_components,dist,docs,snippets,tests,utils,assets,.serverless,App_Resources}'
 "set tags=./tags,tags;
 
 nnoremap <F5> :GundoToggle<CR>
@@ -429,3 +431,5 @@ augroup pencil
                             \ | call textobj#sentence#init()
 augroup END
 let g:pencil#textwidth = 80
+
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>

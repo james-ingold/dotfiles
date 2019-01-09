@@ -1,0 +1,15 @@
+# $NVM_DIR/default-packages
+
+js-beautify
+neovim
+sequelize-cli
+babel-cli
+bitbucket-pipelines
+eslint
+express
+express-generator
+gulp
+mongoose-data-seed
+phantomjs
+less
+nodemon
