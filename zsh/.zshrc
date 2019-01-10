@@ -154,3 +154,5 @@ fi
 ###-tns-completion-end-###
 #
 PATH=$PATH:/Users/jamesingold/Library/Python/3.6/bin  
+
+HOMEBREW_INSTALL_CLEANUP=true
