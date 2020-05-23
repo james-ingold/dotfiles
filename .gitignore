@@ -6,3 +6,6 @@
 /tags
 /tags.lock
 /tags.temp
+/.oh-my-zsh/custom/ibh.zsh
+/.oh-my-zsh/custom/deployment.zsh
+/.oh-my-zsh/custom/zAlias.zsh
