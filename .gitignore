@@ -9,3 +9,6 @@
 /.oh-my-zsh/custom/ibh.zsh
 /.oh-my-zsh/custom/deployment.zsh
 /.oh-my-zsh/custom/zAlias.zsh
+/.vim/pack
+/.vim/files/undo
+/.oh-my-zsh/custom/update.zsh

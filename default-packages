@@ -1,15 +1,23 @@
 # $NVM_DIR/default-packages
 
-js-beautify
-neovim
-sequelize-cli
 babel-cli
 bitbucket-pipelines
 eslint
 express
 express-generator
+fast-cli
 gulp
+js-beautify
+less
+neovim
+sequelize-cli
 mongoose-data-seed
 phantomjs
-less
 nodemon
+sass
+neovim
+node-sass
+prettier
+typescript
+fixjson
+jsonlint
