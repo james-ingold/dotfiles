@@ -1,0 +1,5 @@
+*.pvt filter=git-crypt diff=git-crypt
+*.key filter=git-crypt diff=git-crypt
+/zsh/zsh_secret filter=git-crypt diff=git-crypt
+/git/name.gitconfig.conf filter=git-crypt diff=git-crypt
+/config/tmuxinator/* filter=git-crypt diff=git-crypt

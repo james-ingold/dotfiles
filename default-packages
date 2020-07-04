@@ -12,7 +12,7 @@ less
 neovim
 sequelize-cli
 mongoose-data-seed
-phantomjs
+# phantomjs
 nodemon
 sass
 neovim

@@ -1,0 +1,4 @@
+# following a redirect, set previous URL as referer.
+referer = ";auto"
+
+connect-timeout = 60

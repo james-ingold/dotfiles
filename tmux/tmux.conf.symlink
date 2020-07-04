@@ -1,0 +1,76 @@
+set-option -g default-shell /bin/zsh
+
+# index at 1 for tmuxinator
+set -g base-index 1
+set -g pane-base-index 1
+set-window-option -g pane-base-index 1
+
+# set scrollback history to 10000 (10k)
+set -g history-limit 10000
+
+#Hard mode, disable mouse
+set-option -g mouse off
+
+# Activity Monitoring
+# setw is set-window-option
+setw -g monitor-activity off
+set -g visual-activity off
+
+# make delay shorter
+set -sg escape-time 0
+
+#reload tmux conf
+bind r source-file ~/.tmux.conf
+
+#vi keys for help and copy modes
+setw -g mode-keys vi
+
+# set Ctrl-a as the default prefix key combination
+# and unbind C-b to free it up
+set -g prefix C-a
+bind C-a send-prefix
+unbind C-b
+# use PREFIX | to split window horizontally and PREFIX - to split vertically
+bind | split-window -h
+bind - split-window -v
+# map Vi movement keys as pane movement keys
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# resize panes using PREFIX H, J, K, L
+# -r makes the key repeatable, only need to press PREFIX once
+bind -r H resize-pane -L 5
+bind -r J resize-pane -D 5
+bind -r K resize-pane -U 5
+bind -r L resize-pane -R 5
+
+# and use C-h and C-l to cycle thru panes
+bind -r C-h select-window -t :-
+bind -r C-l select-window -t :+
+
+# X to kill current session
+bind X kill-session
+
+# ----------------------
+# set nova colors
+# ----------------------
+
+# These are the rules you need to use True Color and Nova terminal ANSI colors
+# If you want Tmux to use the Nova color scheme, ensure you have installed a Nova plugin for your terminal first
+
+# make tmux display things in 256 colors
+#set-option -g default-terminal "screen-256color"
+
+set -g default-terminal "xterm-256color"
+set -ga terminal-overrides ",xterm-256color:Tc"
+set -g pane-border-style 'bg=black,fg=#1E272C'
+set -g pane-active-border-style 'bg=black,fg=#1E272C'
+set -g status-style 'bg=#1E272C,fg=#6A7D89'
+set-window-option -g window-status-current-style 'bg=#1E272C,fg=cyan'
+# set-window-option -g window-status-current-bg '#1E272C'
+# set-window-option -g window-status-current-fg cyan
+set -wg mode-style 'bg=cyan,fg=black'
+set -g message-style 'bg=black,fg=cyan'
+set -g clock-mode-colour cyan
