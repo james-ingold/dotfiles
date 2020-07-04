@@ -6,3 +6,6 @@
 *.sqlite*
 
 tags
+
+*.swp
+*.swo

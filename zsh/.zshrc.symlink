@@ -185,3 +185,6 @@ bindkey '^x^e' edit-command-line
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 prompt spaceship
+
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"

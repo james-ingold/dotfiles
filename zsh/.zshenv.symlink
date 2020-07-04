@@ -8,4 +8,9 @@ export HOMEBREW_NO_ANALYTICS=1
 
 export REPOS=$HOME/Repos/
 
+export RBENV_VERSION=2.6.0
+
+# skip chromium pupeteer download by default
+export PUPPETEER_SKIP_DOWNLOAD=1
+
 

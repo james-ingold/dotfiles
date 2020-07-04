@@ -35,10 +35,10 @@ for config in $config_files; do
     fi
 done
 
-ln -sv "$DOTFILES/default-packages" "$NVM_DIR/"
+ln -sv "$DOTFILES/default-packages" "$NVM_DIR"
 
 # vim / nvim
 ln -s "$DOTFILES/.vim/" "$HOME"
 
 # oh-my-zsh
-ln -s "$DOTFILES/.oh-my-zsh/custom" "$HOME/.oh-my-zsh/custom"
+ln -s "$DOTFILES/.oh-my-zsh/custom" "$HOME/.oh-my-zsh"

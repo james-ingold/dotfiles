@@ -12,3 +12,6 @@
 /.vim/pack
 /.vim/files/undo
 /.oh-my-zsh/custom/update.zsh
+/.oh-my-zsh/custom/armor.zsh
+/.oh-my-zsh/custom/aws.zsh
+/.oh-my-zsh/custom/stocks.zsh

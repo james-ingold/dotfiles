@@ -29,8 +29,8 @@ alias ni='npm install'
 alias jxk='kubectl --context=juxly-production'
 alias nginxConf='jxk -n ingress-nginx exec nginx-ingress-controller-65b9795548-79ksd -- cat /etc/nginx/nginx.conf > ./nginx.conf'
 alias ala='open /Applications/Alacritty.app'
+alias diffAll='git difftool -y -g'
 
-alias fe='functions-emulator'
 alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\   -f2"
 
 alias bashprofile='$EDITOR ~/.bash_profile'
@@ -45,5 +45,17 @@ alias dockerrmi='docker rmi $(docker images -qf dangling=true)'
 alias dockerstart='open -a Docker'
 alias showcontainers='docker ps --filter "status=exited"'
 
+#kube
+alias kctx=kubectx
+alias kns=kubens
+alias kon=kubeon
+alias koff=kubeoff
+alias k=kubectl
+alias krsd=k rollout status deploy
+alias jxk='kubectl --context=juxly-production'
 
+#node
+alias nrd='npm run debug'
 
+#homebrew
+alias updatehb='/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
