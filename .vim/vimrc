@@ -90,7 +90,7 @@ function! PackInit() abort
   call minpac#add('editorconfig/editorconfig-vim')  "use the editor config, luke
   "Plugin 'christoomey/vim-sort-motion'
   "call minpac#add('suan/vim-instant-markdown') "previewing markdown
-  call minpac#add('iamcco/markdown-preview.nvim')
+  call minpac#add('iamcco/markdown-preview.nvim', {'do': 'call mkdp#util#install()'})  
   "Plugin 'easymotion/vim-easymotion'
   call minpac#add('jiangmiao/auto-pairs')
   "Plugin 'neilagabriel/vim-geeknote'
@@ -132,6 +132,7 @@ function! PackInit() abort
   call minpac#add('vim-scripts/AnsiEsc.vim')
   call minpac#add('jeetsukumaran/vim-pythonsense')
   call minpac#add('neo4j-contrib/cypher-vim-syntax')
+  call minpac#add('peitalin/vim-jsx-typescript')
 
   "Solidity file type
   call minpac#add('tomlion/vim-solidity')
@@ -216,7 +217,8 @@ let g:ale_fixers = {
   \  'javascript': ['eslint'],
   \  'typescript': ['eslint'],
   \  'vue': ['eslint', 'prettier'],
-  \  'json': ['fixjson']
+  \  'json': ['fixjson', 'prettier'],
+  \  'python': ['yapf']
   \ }
 let g:ale_fix_on_save = 1
 let g:ale_linters = {
@@ -293,12 +295,22 @@ colorscheme nova
 "Python-Mode Settings
 "--------------------
 let g:pymode_folding = 0
+let g:pymode_warnings = 1 " turn off warnings
+let g:pymode_trim_whitespaces = 1
+let g:pymode_options = 1 " default pymode options
+let g:pymode_quickfix_maxheight = 0 " no quickfix
+let g:pymode_lint = 0 " we're going to use ale for this
+let g:pymode_lint_cwindow = 0
+let g:pymode_options_max_line_length = 120
+let g:pymode_lint_ignore = ["C0116"]
 
 " NERDTree Settings
 nmap <silent> <C-s> :NERDTreeToggle<CR>
 let g:NERDTreeMapOpenVSplit=',v'
 let g:NERDTreeDirArrows = 1
 let g:NERDTreeQuitOnOpen=1
+let g:NERDTreeShowHidden=1
+let g:NERDTreeIgnore = ['\.DS_Store$', 'tags']
 " Coffee Script Settings
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
@@ -494,6 +506,9 @@ endif
 "Use`[c` and `]c` to navigate diagnostics
 nmap <silent> [c <Plug>(coc-diagnostic-prev)
 nmap <silent> ]c <Plug>(coc-diagnostic-next)
+
+"re-name
+nmap <leader>rn <Plug>(coc-rename)
 
 " inoremap <silent><expr> <TAB>
 "         \ pumvisible() ? "\<C-n>" :

@@ -1,0 +1,11 @@
+export OMZ="$HOME/.oh-my-zsh"
+export EDITOR='nvim'
+# ESC delay reduced to 0.1
+export KEYTIMEOUT=1
+
+# opt out of homebrew analytics
+export HOMEBREW_NO_ANALYTICS=1
+
+export REPOS=$HOME/Repos/
+
+

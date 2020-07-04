@@ -1,0 +1,131 @@
+[include]
+    path = ./name.gitconfig.conf
+; [difftool "vimmerge"]
+;   cmd = vim -f -d --noplugin
+
+[diff]
+    tool = vimdiff
+  prompt = false
+;  conflictstyle = diff3
+; keepBackup = false
+
+; [difftool]
+;   bc3 = trustExitCode
+;   prompt = false
+
+[grep]
+  lineNumber = true
+  extendRegexp = true
+
+; [merge]
+;   tool = vimmerge
+; [mergetool "vimmerge"]
+;   cmd = vim -f -d --noplugin
+;   keepBackup = false
+[merge]
+  tool = vimdiff
+  conflictstyle = diff3
+  prompt = false
+  keepBackup = false
+
+[alias]
+    st = status
+    d = diff
+    ci = commit -v
+    cia = commit -v -a
+    cm = !git add -A && git commit -m
+    co = checkout
+    cp = cherry-pick
+    dci = svn dcommit
+    l = log
+    ll = log -p
+    lm = log master..
+    llm = log -p master..
+    b = branch
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    lflow = log --no-merges --author='James Ingold' --stat --pretty='\n\n%C(bold blue)[%h] %C(bold yellow)%ad (%cr) %C(green)- %s' --date=format:'%b %d %Y'
+    lgme = log --author='James' --after={1.week.ago} --pretty=oneline --abbrev-commit
+    co = checkout
+    pb = push --set-upstream origin HEAD
+    ss = status -s
+    leaderboard = shortlog -sn
+    leaderboard2 = shortlog -sn --since='10 weeks'
+    overview = log --all --since='2 weeks' --oneline --no-merges
+    gv = difftool -g -y
+    sshCommand = ssh -vvv
+    nomaster = log HEAD --not master --stat
+    releasenotes = log HEAD --not master --format=%s --no-merges --no-decorate
+    cam = commit  -a -m
+
+#[colors]
+  #ui = auto
+
+# Nova color theme
+[color]
+  pager = true
+  ui = auto
+  status = auto
+  diff = auto
+  branch = auto
+  showBranch = auto
+  interactive = auto
+  grep = auto
+[color "status"]
+  header = black bold
+  branch = cyan
+  nobranch = red
+  unmerged = red
+  untracked = cyan
+  added = green
+  changed = red bold
+[color "diff"]
+  meta = red bold
+  frag = black bold
+  func = blue
+  old = red strike
+  new = green
+  commit = blue
+  whitespace = red
+  context = normal
+[color "branch"]
+  current = cyan
+  local = blue
+  remote = magenta
+  upstream = magenta
+  plain = normal
+[color "decorate"]
+  branch = blue
+  remoteBranch = magenta
+  tag = magenta
+  stash = cyan
+  HEAD = blue
+[color "interactive"]
+  prompt = red
+  header = red bold
+  error = red
+  help = black bold
+[color "grep"]
+  context = normal
+  match = cyan
+  filename = blue
+  function = blue
+  selected = normal
+  separator = red bold
+  linenumber = normal
+[push]
+	default = simple
+[core]
+      excludesfile = /Users/jamesingold/.gitignore_global
+      pager = vim -R -c 'set filetype=git nowrap' -c AnsiEsc -
+	hooksPath = /Users/jamesingold/.juxly/githooks
+[gitflow "branch"]
+	master = master
+	develop = test
+[gitflow "prefix"]
+	feature = feature/
+	release = release/
+	hotfix = hotfix/
+	support = support/
+	versiontag =
+[mergetool]
+	keepBackup = false
