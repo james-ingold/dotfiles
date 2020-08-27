@@ -21,3 +21,4 @@ prettier
 typescript
 fixjson
 jsonlint
+lodash
