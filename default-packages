@@ -21,4 +21,4 @@ prettier
 typescript
 fixjson
 jsonlint
-lodash
+lodash-cli
