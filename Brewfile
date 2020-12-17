@@ -69,8 +69,9 @@ cask "vscodium"
 cask "rescuetime"
 cask "karabiner-elements"
 cask "tower"
-cask "sequel-pro"
+cask "sequel-pro-nightly"
 cask "flux"
+cask "spotify"
 
 mas "Xcode", id: 497799835
 mas "Evernote", id: 406056744
