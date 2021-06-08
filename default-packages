@@ -21,4 +21,8 @@ prettier
 typescript
 fixjson
 jsonlint
+memcached-cli
+surge
+jsonlint
+write-good
 lodash-cli
