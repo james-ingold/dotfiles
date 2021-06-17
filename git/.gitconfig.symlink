@@ -1,5 +1,5 @@
 [include]
-    path = ./name.gitconfig.conf
+    path = .name.gitconfig.conf
 ; [difftool "vimmerge"]
 ;   cmd = vim -f -d --noplugin
 
@@ -129,3 +129,5 @@
 	versiontag =
 [mergetool]
 	keepBackup = false
+[pull]
+	rebase = true
