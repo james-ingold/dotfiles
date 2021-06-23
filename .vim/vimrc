@@ -30,8 +30,8 @@ set wildmode=full
 "set completeopt-=preview
 "set nobackup
 "set nowritebackup
-let g:python_host_prog = '/usr/local/bin/python2.7'
-let g:python3_host_prog = '/Library/Frameworks/Python.framework/Versions/3.6/bin/python3'
+let g:python_host_prog = '~/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '~/.pyenv/versions/neovim3/bin/python'
 " let g:ycm_server_python_interpreter = '/usr/local/bin/python'
 let g:mapleader = ','
 let g:solarized_termcolors=256
@@ -80,7 +80,7 @@ function! PackInit() abort
   call minpac#add('mattn/emmet-vim')
   call minpac#add('klen/python-mode')   "python coding awesomeness
   call minpac#add('ervandew/supertab')
-  call minpac#add('trevordmiller/nova-vim')
+  call minpac#add('james-ingold/nova-vim')
   call minpac#add('vim-airline/vim-airline')
   call minpac#add('tpope/vim-surround')
   call minpac#add('tpope/vim-commentary')
@@ -90,7 +90,7 @@ function! PackInit() abort
   call minpac#add('editorconfig/editorconfig-vim')  "use the editor config, luke
   "Plugin 'christoomey/vim-sort-motion'
   "call minpac#add('suan/vim-instant-markdown') "previewing markdown
-  call minpac#add('iamcco/markdown-preview.nvim', {'do': 'call mkdp#util#install()'})  
+  call minpac#add('iamcco/markdown-preview.nvim', {'do': 'call mkdp#util#install()'})
   "Plugin 'easymotion/vim-easymotion'
   call minpac#add('jiangmiao/auto-pairs')
   "Plugin 'neilagabriel/vim-geeknote'
@@ -315,6 +315,7 @@ let g:NERDTreeIgnore = ['\.DS_Store$', 'tags']
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
 " Markdown Preview Options
+let g:mkdp_browser = 'Google Chrome'
 " let g:instant_markdown_slow = 1
 " let g:instant_markdown_autostart = 0
 " Airline settings
@@ -495,7 +496,30 @@ let g:vimade.fadelevel = 0.8
 let g:vimade.checkInternal = 100 "increase default from 32ms to 100ms
 let g:vimade_usecursorhold = 1
 
-let g:gutentags_exclude_filetypes = ['vim', 'git', 'sh']
+let g:gutentags_exclude_filetypes = ['vim', 'git', 'sh', 'gitcommit', 'gitconfig', 'gitrebase', 'gitsendemail']
+let g:gutentags_ctags_exclude = [
+\  '*.git', '*.svn', '*.hg',
+\  'cache', 'build', 'dist', 'bin', 'node_modules', 'bower_components',
+\  '*-lock.json',  '*.lock',
+\  '*.min.*',
+\  '*.bak',
+\  '*.zip',
+\  '*.pyc',
+\  '*.class',
+\  '*.sln',
+\  '*.csproj', '*.csproj.user',
+\  '*.tmp',
+\  '*.cache',
+\  '*.vscode',
+\  '*.pdb',
+\  '*.exe', '*.dll', '*.bin',
+\  '*.mp3', '*.ogg', '*.flac',
+\  '*.swp', '*.swo',
+\  '.DS_Store', '*.plist',
+\  '*.bmp', '*.gif', '*.ico', '*.jpg', '*.png', '*.svg',
+\  '*.rar', '*.zip', '*.tar', '*.tar.gz', '*.tar.xz', '*.tar.bz2',
+\  '*.pdf', '*.doc', '*.docx', '*.ppt', '*.pptx', '*.xls',
+\]
 
 "as of patch 8.1.0360, Vim is bundled with the xdiff library and can create diffs internally. This can be more efficient than shelling out to an external program, and allows for a choice of diff algorithms. The “patience” algorithm often produces more human-readable output than the default
 if has('patch-8.1.0360')
