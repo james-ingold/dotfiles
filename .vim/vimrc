@@ -30,8 +30,8 @@ set wildmode=full
 "set completeopt-=preview
 "set nobackup
 "set nowritebackup
-let g:python_host_prog = '/usr/local/bin/python2.7'
-let g:python3_host_prog = '/Library/Frameworks/Python.framework/Versions/3.6/bin/python3'
+let g:python_host_prog = '~/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '~/.pyenv/versions/neovim3/bin/python'
 " let g:ycm_server_python_interpreter = '/usr/local/bin/python'
 let g:mapleader = ','
 let g:solarized_termcolors=256
@@ -80,7 +80,7 @@ function! PackInit() abort
   call minpac#add('mattn/emmet-vim')
   call minpac#add('klen/python-mode')   "python coding awesomeness
   call minpac#add('ervandew/supertab')
-  call minpac#add('trevordmiller/nova-vim')
+  call minpac#add('james-ingold/nova-vim')
   call minpac#add('vim-airline/vim-airline')
   call minpac#add('tpope/vim-surround')
   call minpac#add('tpope/vim-commentary')
@@ -236,6 +236,7 @@ let g:ale_javascript_eslint_suppress_missing_config = 1
 let g:ale_lint_on_text_changed = 0 "trying to fix ale fucking up
 "let g:ale_lint_on_enter = 0 "ditto
 let g:ale_lint_on_filetype_changed = 1
+"let g:ale_javascript_prettier_options = '--single-quote --print-width 120 --trailing-comma all' "all doesn't support global config so this is the best we can do
 augroup ALECMD
     autocmd!
     autocmd InsertLeave * call ale#Queue(0)
@@ -503,6 +504,7 @@ if has('patch-8.1.0360')
 endif
 
 "coc-settings
+autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'setup.cfg', 'setup.py', 'pyproject.toml']
 "Use`[c` and `]c` to navigate diagnostics
 nmap <silent> [c <Plug>(coc-diagnostic-prev)
 nmap <silent> ]c <Plug>(coc-diagnostic-next)
