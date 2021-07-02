@@ -75,7 +75,7 @@ if [[ $- == *i* ]]; then
     }
 
     function sts_cache() {
-      bmemcached-cli $STS_CACHE
+      memcached-cli $STS_CACHE
     }
 
     function fhir_mongo() {
