@@ -236,6 +236,7 @@ let g:ale_javascript_eslint_suppress_missing_config = 1
 let g:ale_lint_on_text_changed = 0 "trying to fix ale fucking up
 "let g:ale_lint_on_enter = 0 "ditto
 let g:ale_lint_on_filetype_changed = 1
+"let g:ale_javascript_prettier_options = '--single-quote --print-width 120 --trailing-comma all' "all doesn't support global config so this is the best we can do
 augroup ALECMD
     autocmd!
     autocmd InsertLeave * call ale#Queue(0)
@@ -527,6 +528,7 @@ if has('patch-8.1.0360')
 endif
 
 "coc-settings
+autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'setup.cfg', 'setup.py', 'pyproject.toml']
 "Use`[c` and `]c` to navigate diagnostics
 nmap <silent> [c <Plug>(coc-diagnostic-prev)
 nmap <silent> ]c <Plug>(coc-diagnostic-next)
