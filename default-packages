@@ -16,7 +16,6 @@ mongoose-data-seed
 nodemon
 sass
 neovim
-node-sass
 prettier
 typescript
 fixjson
