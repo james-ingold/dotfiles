@@ -5,6 +5,7 @@ tap "homebrew/cask-versions"
 
 #packages
 brew "ack"
+brew "act"
 brew "awscli"
 brew "autopep8"
 brew "bat"

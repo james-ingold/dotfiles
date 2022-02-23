@@ -25,3 +25,5 @@ surge
 jsonlint
 write-good
 lodash-cli
+redis-cli
+uglify-js
