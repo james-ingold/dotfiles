@@ -53,3 +53,7 @@ ln -sv \$PWD/.editorconfig ~
 ### Iterm2 Nova Colors
 
 Navigate to Colors in Iterm2 and Import nova.itermcolors
+
+### Fonts
+
+https://github.com/powerline/fonts
