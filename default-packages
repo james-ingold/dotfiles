@@ -27,3 +27,4 @@ write-good
 lodash-cli
 redis-cli
 uglify-js
+husky
