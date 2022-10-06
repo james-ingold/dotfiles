@@ -35,6 +35,8 @@ edit the key and trust it
 
 NVM
 
+Minpac `git clone https://github.com/k-takata/minpac.git \ ~/.vim/pack/minpac/opt/minpack`
+
 Then, clone the dotfiles repository to your home directory as ~/.dotfiles.
 
 ➜ git clone https://github.com/james-ingold/dotfiles.git ~/.dotfiles && cd

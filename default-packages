@@ -27,4 +27,5 @@ write-good
 lodash-cli
 redis-cli
 uglify-js
+newman
 husky

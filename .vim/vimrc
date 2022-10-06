@@ -133,9 +133,14 @@ function! PackInit() abort
   call minpac#add('jeetsukumaran/vim-pythonsense')
   call minpac#add('neo4j-contrib/cypher-vim-syntax')
   call minpac#add('peitalin/vim-jsx-typescript')
-
   "Solidity file type
   call minpac#add('tomlion/vim-solidity')
+  "graphsql file type
+  call minpac#add('jparise/vim-graphql')
+  " terraform
+  call minpac#add('hashivim/vim-terraform')
+  " github copilot
+  call minpac#add('github/copilot.vim')
 endfunction
 " Define user commands for updating/cleaning the plugins.
 " Each of them calls PackInit() to load minpac and register
@@ -486,7 +491,8 @@ augroup pencil
                             \ | call textobj#quote#init()
                             \ | call textobj#sentence#init()
 augroup END
-let g:pencil#textwidth = 80
+let g:pencil#textwidth = 120
+let g:pencil#autoformat = 1
 
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
@@ -561,3 +567,6 @@ nmap <leader>rn <Plug>(coc-rename)
 " Open VSCode to the file that we're currently in, helpful when we need to do
 " hardcore debugging
 nnoremap <leader>vs :silent exec "!open vscodium://file/" . expand("%:p") . ":" . line(".") . ":" . col(".")<cr>:redraw!<cr>
+
+" set filetypes as typescriptreact
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
