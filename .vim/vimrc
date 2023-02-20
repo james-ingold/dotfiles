@@ -237,6 +237,7 @@ let g:ale_linters = {
   \ 'text': ['write-good', 'vale'],
   \ 'json': ['jsonlint']
   \ }
+let ale_virtualtext_cursor = 'current' "v3.3.0 - updated to immediately show inline error messages which isn't great
 let g:ale_javascript_eslint_suppress_missing_config = 1
 let g:ale_lint_on_text_changed = 0 "trying to fix ale fucking up
 "let g:ale_lint_on_enter = 0 "ditto
