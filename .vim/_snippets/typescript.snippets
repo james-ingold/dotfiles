@@ -14,3 +14,9 @@ export class ${1:snip.fn} extends React.Component<{}> {
 	}
 }
 endsnippet
+
+snippet hhTask
+task('${1:snip.fn}').setAction(async function (taskArguments: TaskArguments, { ethers }) {
+  const contract: __factory = await ethers.getContractFactory('Contract');
+});
+endsnippet
