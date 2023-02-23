@@ -2,13 +2,13 @@
 
 # Do symlinking
 
-DOTFILES=$HOME/.dotfiles
+DOTFILES=$HOME/dotfiles
 
 echo -e "\\nCreating symlinks"
 echo "=============================="
 linkables=$( find -H "$DOTFILES" -maxdepth 3 -name '*.symlink' )
 for file in $linkables ; do
-    target="$HOME/.$( basename "$file" '.symlink' )"
+    target="$HOME/$( basename "$file" '.symlink' )"
     if [ -e "$target" ]; then
         echo "~${target#$HOME} already exists... Skipping."
     else

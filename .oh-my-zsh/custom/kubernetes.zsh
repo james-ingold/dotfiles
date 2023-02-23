@@ -49,3 +49,28 @@ function bash-pod () {
   fi
   jxk -n $JXK_NAMESPACE exec -it $(getPod $POD) -- /bin/bash
 }
+
+function k8_encodeSecret() { 
+    if [ -z "$1" ]; then 
+        echo "Provide a variable to encode"
+    elif [ -z "$2" ]; then
+        echo -n $1 | base64
+    else
+        echo "$1 $(echo -n $2 | base64)"
+    fi
+}
+
+function k8_decodeSecret() {
+    if [ -z "$1" ]; then 
+        echo "Provide a variable to decode"
+    elif [ -z "$2" ]; then
+        echo -n $1 | base64 --decode
+    else
+        echo "$1 $(echo -n $2 | base64 --decode)"
+    fi
+}
+
+function k8_update_deployment() {
+  TAG=$(git describe --abbrev=0)
+  k -n juxly-vault set image deployment/juxly-vault juxly-vault=632992792449.dkr.ecr.us-east-1.amazonaws.com/vault:$TAG
+}
