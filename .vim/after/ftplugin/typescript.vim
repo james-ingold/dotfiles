@@ -3,7 +3,7 @@ let g:prettier#autoformat = 0
 let g:prettier#config#semi = 'true'
 
 " single quotes over double quotes
-let g:prettier#config#single_quote = 'true'
+" let g:prettier#config#single_quote = 'true'
 
 " print spaces between brackets
 let g:prettier#config#bracket_spacing = 'true'
