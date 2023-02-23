@@ -103,7 +103,7 @@ function! PackInit() abort
   "Plugin 'sjl/gundo.vim'
   call minpac#add('kana/vim-textobj-user')
   "Plugin 'Julian/vim-textobj-brace'
-  call minpac#add('Shougo/vimproc.vim')
+  call minpac#add('Shougo/vimproc.vim', {'do': 'make'})
   call minpac#add('mxw/vim-jsx')
   call minpac#add('posva/vim-vue')
   call minpac#add('vim-scripts/Vim-R-plugin')
@@ -221,7 +221,7 @@ let g:ale_completion_enabled = 1
 let g:ale_fixers = {
   \  'javascript': ['eslint'],
   \  'typescript': ['eslint'],
-  \  'vue': ['eslint', 'prettier'],
+  \  'vue': ['eslint'],
   \  'json': ['fixjson', 'prettier'],
   \  'python': ['yapf']
   \ }
@@ -237,6 +237,7 @@ let g:ale_linters = {
   \ 'text': ['write-good', 'vale'],
   \ 'json': ['jsonlint']
   \ }
+let ale_virtualtext_cursor = 'current' "v3.3.0 - updated to immediately show inline error messages which isn't great
 let g:ale_javascript_eslint_suppress_missing_config = 1
 let g:ale_lint_on_text_changed = 0 "trying to fix ale fucking up
 "let g:ale_lint_on_enter = 0 "ditto
@@ -570,3 +571,5 @@ nnoremap <leader>vs :silent exec "!open vscodium://file/" . expand("%:p") . ":" 
 
 " set filetypes as typescriptreact
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
+
+let g:NERDTreeMinimalMenu=1 " fix for https://github.com/preservim/nerdtree/issues/1321 until redrawing is fixed
