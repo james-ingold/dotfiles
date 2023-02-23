@@ -2,6 +2,8 @@
 tap "homebrew/cask"
 # alternativie cask versions such as nightly builds
 tap "homebrew/cask-versions"
+tap "heroku/brew"
+tap "caskroom/fonts"
 
 #packages
 brew "ack"
@@ -13,7 +15,7 @@ brew "cmake"
 brew "coreutils"
 brew "ctags"
 brew "docker-machine-driver-xhyve"
-brew "etheruem"
+brew "ethereum"
 brew "fd"
 brew "flake8"
 brew "fzf"
@@ -35,7 +37,9 @@ brew "pkg-config"
 brew "prettyping"
 brew "python"
 brew "pylint"
+brew "rbenv"
 brew "ripgrep"
+brew "ruby-build"
 brew "shellcheck"
 brew "sphinx-doc"
 brew "ssh-copy-id"
@@ -43,7 +47,7 @@ brew "sslmate"
 brew "the_silver_searcher"
 brew "tldr"
 brew "tmux"
-brew "unrar"
+brew "rar"
 brew "vale"
 brew "vim"
 brew "watchman"
@@ -86,3 +90,4 @@ cask "vivaldi"
 mas "Xcode", id: 497799835
 mas "Evernote", id: 406056744
 mas "Be Focused Pro", id: 961632517
+mas "Amphetamine", id: 937984704
