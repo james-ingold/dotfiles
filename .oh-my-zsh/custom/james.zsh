@@ -107,9 +107,16 @@ if [[ $- == *i* ]]; then
         curl -X GET -H "X-TrackerToken: $PIVOTAL_TOKEN" "https://www.pivotaltracker.com/services/v5/projects/1776629/search?query=type:feature,bug,chore+includedone:true+state:accepted,delivered,finished+modified_since:-1w+owner:2098523" | jq '[.stories.stories[]|{id:.id, name:.name, type:.story_type, labels:.labels, accepted:.accepted_at, state:.current_state}]|sort_by(.state)|.[]|"\(.id)-\(.type) \(.name) \(.state) \(.accepted)"'
       }
 
+    function standupPortal() {
+      curl -X GET -H "X-TrackerToken: $PIVOTAL_TOKEN" "https://www.pivotaltracker.com/services/v5/projects/2477061/search?query=type:feature,bug,chore+includedone:true+state:accepted,delivered,finished+modified_since:-1w+owner:2098523" | jq '[.stories.stories[]|{id:.id, name:.name, type:.story_type, labels:.labels, accepted:.accepted_at, state:.current_state}]|sort_by(.state)|.[]|"\(.id)-\(.type) \(.name) \(.state) \(.accepted)"'
+    }
+
     function nvm_update() {
       # -r for raw output / no double quotes around version number
       NVM_VERSION_TAG=$(curl -sL https://api.github.com/repos/nvm-sh/nvm/releases/latest | jq -r '.name')
-      curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/$NVM_VERSION_TAG/install.sh" | bash
+      EXISTING_NVM_VERSION="v"$(nvm --version)
+      if [ "$NVM_VERSION_TAG" != "$EXISTING_NVM_VERSION" ]; then
+        curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/$NVM_VERSION_TAG/install.sh" | bash
+      fi
     }
 fi

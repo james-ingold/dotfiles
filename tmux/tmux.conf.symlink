@@ -53,6 +53,8 @@ bind -r C-l select-window -t :+
 # X to kill current session
 bind X kill-session
 
+set -g pane-border-status off
+
 # ----------------------
 # set nova colors
 # ----------------------

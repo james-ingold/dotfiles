@@ -58,4 +58,4 @@ alias jxk='kubectl --context=juxly-production'
 alias nrd='npm run debug'
 
 #homebrew
-alias updatehb='/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+alias updatehb='/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"'

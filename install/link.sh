@@ -2,7 +2,13 @@
 
 # Do symlinking
 
+<<<<<<< Updated upstream
 DOTFILES=$HOME/dotfiles
+||||||| constructed merge base
+DOTFILES=$HOME/.dotfiles
+=======
+DOTFILES=~/Documents/Repositories/dotfiles
+>>>>>>> Stashed changes
 
 echo -e "\\nCreating symlinks"
 echo "=============================="
