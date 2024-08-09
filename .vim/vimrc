@@ -96,6 +96,7 @@ function! PackInit() abort
   "Plugin 'neilagabriel/vim-geeknote'
   call minpac#add('mileszs/ack.vim')
   call minpac#add('nathanaelkane/vim-indent-guides')
+  call minpac#add('junegunn/fzf')
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('SirVer/ultisnips')
   call minpac#add('tpope/vim-unimpaired')
@@ -219,7 +220,7 @@ let g:ale_sign_column_always = 1
 let g:airline#extensions#ale#enabled = 1
 let g:ale_completion_enabled = 1
 let g:ale_fixers = {
-  \  'javascript': ['eslint'],
+  \  'javascript': ['eslint', 'prettier'],
   \  'typescript': ['eslint'],
   \  'vue': ['eslint'],
   \  'json': ['fixjson', 'prettier'],
@@ -242,6 +243,29 @@ let g:ale_javascript_eslint_suppress_missing_config = 1
 let g:ale_lint_on_text_changed = 0 "trying to fix ale fucking up
 "let g:ale_lint_on_enter = 0 "ditto
 let g:ale_lint_on_filetype_changed = 1
+" fix ale import errors
+let g:ale_python_auto_pipenv = 1
+let g:ale_python_flake8_auto_pipenv = 1
+let g:ale_python_pylint_auto_pipenv = 1
+let g:ale_python_pylint_options = "--init-hook='import sys; sys.path.append(\".\")'"
+let g:ale_python_flake8_options = '--max-line-length=88'
+" Disable auto-detection of virtualenvironments
+let g:ale_virtualenv_dir_names = []
+" Environment variable ${VIRTUAL_ENV} is always used
+"
+function! SetAlePythonExecutable()
+    let l:venv = $VIRTUAL_ENV
+    if empty(l:venv)
+        let g:ale_python_executable = 'python' " Default to global Python
+    else
+        let g:ale_python_executable = l:venv . '/bin/python'
+    endif
+endfunction
+
+augroup ale_python_venv
+    autocmd!
+    autocmd BufEnter,BufRead *.py call SetAlePythonExecutable()
+augroup END
 "let g:ale_javascript_prettier_options = '--single-quote --print-width 120 --trailing-comma all' "all doesn't support global config so this is the best we can do
 augroup ALECMD
     autocmd!
