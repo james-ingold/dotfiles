@@ -57,7 +57,9 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # zsh-autosuggestions
-plugins=(vi-mode git osx dotenv geeknote tmuxinator aws heroku httpie node npm git-flow kubectl)
+#plugins=(vi-mode git osx dotenv geeknote tmuxinator aws heroku httpie node npm git-flow kubectl)
+plugins=(vi-mode git osx geeknote tmuxinator aws heroku httpie node npm git-flow kubectl)
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -154,14 +156,17 @@ fi
 # Adding python 3.6 to PATH seems to make NEOVIM spike CPU
 PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
 
-#kube-ps1 configuration
-source ~/Repos/OpenSource/kube-ps1/kube-ps1.sh
-PROMPT='$(kube_ps1)'$PROMPT
-kubeoff # disable by default
+  #kube-ps1 configuration
+  source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+  PS1='$(kube_ps1)'$PS1
+  kubeoff # disable by default
 
 # RBENV init
 #
 eval "$(rbenv init -)"
+# trying to fix pip installing things into site_packages https://github.com/pyenv/pyenv/issues/2417
+# export PATH="$PATH:$HOME/.local/bin"
+# endfix
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
@@ -171,12 +176,9 @@ fi
 if [[ -n $VIRTUAL_ENV && -e "${VIRTUAL_ENV}/bin/activate" ]]; then
   source "${VIRTUAL_ENV}/bin/activate"
 fi
+
 # .juxly zsh
 PATH=$PATH:$ZSH/custom/.juxly
-
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /Users/jamesingold/Repos/synthesize/api/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/jamesingold/Repos/synthesize/api/node_modules/tabtab/.completions/slss.zsh
 
 # Editing a command line with prefered text editor
 autoload -U edit-command-line
@@ -189,5 +191,9 @@ bindkey '^x^e' edit-command-line
 autoload -U promptinit; promptinit
 prompt spaceship
 
-export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="/Users/jamesingold/.local/bin:$PATH"
+
+export PATH="$PATH:/Users/jamesingold/.foundry/bin"

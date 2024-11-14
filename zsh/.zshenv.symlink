@@ -13,4 +13,11 @@ export RBENV_VERSION=2.6.0
 # skip chromium pupeteer download by default
 export PUPPETEER_SKIP_DOWNLOAD=1
 
+# rbenv gem binaries
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+export EARBUG_ROOT=$HOME/Repos/earbug
+
+# AWS
+export AWS_PAGER=""
 

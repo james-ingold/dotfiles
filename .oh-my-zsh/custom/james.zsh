@@ -40,7 +40,8 @@ if [[ $- == *i* ]]; then
     # --hidden: Search hidden files and folders
     # --follow: Follow symlinks
     # --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
-    export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!{.git,node_modules,bower_components,App_Resources}/*"'
+    # export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!{.git,node_modules,bower_components,App_Resources,lib}/*"'
+    export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*" -g "!node_modules/*" -g "!bower_components/*" -g "!.vscode/*" -g "!lib/*"'
     #fix mouse issues by unloading and reloading bluetooth driver
     function copy-ssh() {
         iFile=$1

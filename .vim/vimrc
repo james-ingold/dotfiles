@@ -224,7 +224,7 @@ let g:ale_fixers = {
   \  'typescript': ['eslint'],
   \  'vue': ['eslint'],
   \  'json': ['fixjson', 'prettier'],
-  \  'python': ['yapf']
+  \  'python': ['yapf', 'isort', 'black']
   \ }
 let g:ale_fix_on_save = 1
 let g:ale_linters = {
@@ -236,13 +236,15 @@ let g:ale_linters = {
   \ 'html': [],
   \ 'md': ['write-good', 'vale'],
   \ 'text': ['write-good', 'vale'],
-  \ 'json': ['jsonlint']
+  \ 'json': ['jsonlint'],
+  \ 'python': ['flake8', 'pylint'],
   \ }
 let ale_virtualtext_cursor = 'current' "v3.3.0 - updated to immediately show inline error messages which isn't great
 let g:ale_javascript_eslint_suppress_missing_config = 1
 let g:ale_lint_on_text_changed = 0 "trying to fix ale fucking up
 "let g:ale_lint_on_enter = 0 "ditto
 let g:ale_lint_on_filetype_changed = 1
+let g:ale_python_flake8_options = '--max-line-length=120'
 " fix ale import errors
 let g:ale_python_auto_pipenv = 1
 let g:ale_python_flake8_auto_pipenv = 1
