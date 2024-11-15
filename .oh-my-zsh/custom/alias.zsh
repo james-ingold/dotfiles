@@ -1,5 +1,7 @@
 export VISUAL=nvim
 alias e='$EDITOR'
+alias python=/usr/local/bin/python3
+alias pip=/usr/local/bin/pip3
 alias vimdiff='vimdiff -c"windo set wrap" $*' # auto word wrap for vimdiff
 alias vim="stty stop '' -ixoff; nvim" # ctrl + s is already used for terminals but we want to use it for the nerdtree in vim
 alias vi="stty stop '' -ixoff; nvim"

@@ -2,9 +2,12 @@
 let b:ale_fixers = [
 \   'remove_trailing_lines',
 \   'isort',
-\   'yapf'
+\   'yapf',
+\   'black'
 \
 \]
+
+let g:ale_python_black_options='--line-length=120'
 
 func! s:SetBreakpoint()
     cal append('.', repeat(' ', strlen(matchstr(getline('.'), '^\s*'))) . 'import ipdb; ipdb.set_trace()')
@@ -18,3 +21,5 @@ func! s:ToggleBreakpoint()
     if getline('.')=~#'^\s*import\sipdb' | cal s:RemoveBreakpoint() | el | cal s:SetBreakpoint() | en
 endf
 nnoremap <F6> :call <SID>ToggleBreakpoint()<CR>
+
+

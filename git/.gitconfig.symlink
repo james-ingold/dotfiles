@@ -2,6 +2,11 @@
     path = .name.gitconfig.conf
 ; [difftool "vimmerge"]
 ;   cmd = vim -f -d --noplugin
+[includeIf "gitdir:~/Repos/kaiju/"]
+    path = ~/Repos/kaiju/.gitconfig
+
+[includeIf "gitdir:~/Repos/clover/"]
+    path = ~/Repos/clover/.gitconfig
 
 [diff]
     tool = vimdiff
@@ -129,5 +134,3 @@
 	versiontag =
 [mergetool]
 	keepBackup = false
-[pull]
-	rebase = true
