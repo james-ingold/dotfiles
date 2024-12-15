@@ -313,7 +313,7 @@ nnoremap <silent> <leader>ga :BCommits<CR>
 nnoremap <silent> <leader>: :BLines<CR>
 nnoremap <silent> <C-r> :BTags<CR>
 nnoremap <silent> <leader>O :Tags<CR>
-let g:fzf_tags_command = 'ctags -R --exclude={node_modules,.git,bower_components,dist,docs,snippets,tests,utils,assets,.serverless,App_Resources,__pycache__}'
+let g:fzf_tags_command = 'ctags -R --exclude={node_modules,.git,bower_components,dist,docs,snippets,tests,utils,assets,.serverless,App_Resources,__pycache__,.build,.venv}'
 "set tags=./tags,tags;
 
 nnoremap <F5> :GundoToggle<CR>
