@@ -63,7 +63,6 @@ brew "zsh-completions"
 # need to apt install these on linux
 cask "alacritty"
 cask "alfred"
-cask "authy"
 cask "brave-browser"
 cask "cursor"
 cask "sequel-ace"
