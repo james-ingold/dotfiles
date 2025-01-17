@@ -59,3 +59,8 @@ Navigate to Colors in Iterm2 and Import nova.itermcolors
 ### Fonts
 
 https://github.com/powerline/fonts
+
+### Pyenv-virtualenv Plugin
+
+`git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv
+root)/plugins/pyenv-virtualenv`
